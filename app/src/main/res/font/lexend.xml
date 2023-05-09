@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><font-family xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font app:font="@font/lexendsemibold" app:fontWeight="600"/>
+    <font app:font="@font/lexendregular" app:fontWeight="400"/>
+    <font app:font="@font/lexendbold" app:fontWeight="700"/>
+    <font app:font="@font/lexendmedium" app:fontWeight="500"/>
+</font-family>

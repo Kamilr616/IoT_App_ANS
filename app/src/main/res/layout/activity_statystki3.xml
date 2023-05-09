@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="195dp"
+        android:layout_height="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89">
+
+        <View
+            android:id="@+id/viewEllipseTwo"
+            android:layout_width="@dimen/_11pxh"
+            android:layout_height="@dimen/_11pxh"
+            android:background="@drawable/rectangle_bg_gray_501_radius_5_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571" />
+
+        <View
+            android:id="@+id/viewEllipseTwo2"
+            android:layout_width="@dimen/_11pxh"
+            android:layout_height="@dimen/_11pxh"
+            android:background="@drawable/rectangle_bg_bluegray_100_90_radius_5_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.353"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571" />
+
+        <View
+            android:id="@+id/viewEllipseTwo3"
+            android:layout_width="@dimen/_11pxh"
+            android:layout_height="@dimen/_11pxh"
+            android:background="@drawable/rectangle_bg_bluegray_100_90_radius_5_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.733"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/viewEllipseTwo4"
+            android:layout_width="@dimen/_11pxh"
+            android:layout_height="@dimen/_11pxh"
+            android:background="@drawable/rectangle_bg_bluegray_100_90_radius_5_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.913"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571" />
+
+        <View
+            android:id="@+id/viewEllipseOne"
+            android:layout_width="@dimen/_11pxh"
+            android:layout_height="@dimen/_11pxh"
+            android:background="@drawable/rectangle_bg_bluegray_100_90_radius_5_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.168"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="394dp"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98">
+
+        <TextView
+            android:id="@+id/txtHomeOne2"
+            style="@style/txtLexendmedium11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.745"
+            tools:text="@string/lbl_satatistics" />
+
+        <ImageView
+            android:id="@+id/imageSettings2"
+            android:layout_width="@dimen/_19pxh"
+            android:layout_height="@dimen/_20pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.717"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.51"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_settings" />
+
+        <ImageView
+            android:id="@+id/imageVolume2"
+            android:layout_width="@dimen/_22pxh"
+            android:layout_height="@dimen/_22pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_volume"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.355"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_volume" />
+
+        <ImageView
+            android:id="@+id/imageHome2"
+            android:layout_width="@dimen/_18pxh"
+            android:layout_height="@dimen/_18pxh"
+            android:layout_gravity="start"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.273"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.53"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_home" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtStatystyki3"
+        style="@style/txtLexendsemibold32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@{satatisticsOneVM.satatisticsOneModel.txtStatystyki}"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        tools:text="@string/lbl_statystyki" />
+
+    <LinearLayout
+        android:id="@+id/linearColumntemperaturaurz"
+        style="@style/groupStylegray_200cornerRadius"
+        android:layout_width="374dp"
+        android:layout_height="615dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearRowtemperaturaurz"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_28pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTemperaturaurz"
+                style="@style/txtLexendregular24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_weight="0.66"
+                android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtTemperaturaurz}"
+                tools:text="@string/msg_temperatura_ur" />
+
+            <ImageView
+                android:id="@+id/image55948741"
+                android:layout_width="@dimen/_78pxh"
+                android:layout_height="@dimen/_78pxh"
+                android:layout_marginStart="@dimen/_48pxh"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_55948741" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameStackredniatempera"
+            android:layout_width="@dimen/_340pxh"
+            android:layout_height="@dimen/_273pxv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_41pxv"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:layout_marginBottom="@dimen/_159pxv">
+
+            <LinearLayout
+                android:id="@+id/linearColumnredniatempera"
+                style="@style/groupStylewhite_A700cornerRadius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtRedniatempera"
+                    style="@style/txtRobotoromansemibold16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_15pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtRedniatempera}"
+                    tools:text="@string/msg_rednia_tempera" />
+
+                <LinearLayout
+                    android:id="@+id/linearRowtwentythree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_15pxh"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtTwentyThree"
+                        style="@style/txtRobotoromanbold14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_weight="0.92"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtTwentyThree}"
+                        tools:text="@string/lbl_50" />
+
+                    <ImageView
+                        android:id="@+id/imageGroup2275"
+                        android:layout_width="@dimen/_2pxh"
+                        android:layout_height="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_202pxh"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_group2275"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_group2275" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowforty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="184dp"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_marginEnd="@dimen/_15pxh"
+                    android:layout_marginBottom="@dimen/_16pxv"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/linearColumnforty"
+                        android:layout_width="0dp"
+                        android:layout_height="158dp"
+                        android:layout_marginBottom="@dimen/_46pxv"
+                        android:layout_weight="0.06"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:id="@+id/frameStackforty"
+                            android:layout_width="@dimen/_15pxh"
+                            android:layout_height="@dimen/_26pxv"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="@dimen/_1pxh">
+
+                            <TextView
+                                android:id="@+id/txtForty"
+                                style="@style/txtInterregular12"
+                                android:layout_width="27dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|center"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtForty}"
+                                tools:text="@string/lbl_90" />
+
+                            <TextView
+                                android:id="@+id/txtThree"
+                                style="@style/txtInterregular12"
+                                android:layout_width="25dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|center"
+                                android:layout_marginStart="@dimen/_1pxh"
+                                android:layout_marginEnd="@dimen/_1pxh"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:ellipsize="end"
+                                android:gravity="center|top"
+                                android:singleLine="true"
+                                android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtThree}"
+                                tools:text="@string/lbl" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/txtHundred"
+                            style="@style/txtInterregular12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:singleLine="true"
+                            android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtThirtyFive}"
+                            tools:text="@string/lbl_80" />
+
+                        <TextView
+                            android:id="@+id/txtThirty"
+                            style="@style/txtInterregular12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:ellipsize="end"
+                            android:gravity="end"
+                            android:singleLine="true"
+                            android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtThirty}"
+                            tools:text="@string/lbl_70" />
+
+                        <TextView
+                            android:id="@+id/txtTwentyFive"
+                            style="@style/txtInterregular12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:singleLine="true"
+                            android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtTwentyFive}"
+                            tools:text="@string/lbl_60" />
+
+                        <TextView
+                            android:id="@+id/txtTwenty"
+                            style="@style/txtInterregular12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:ellipsize="end"
+                            android:gravity="end"
+                            android:singleLine="true"
+                            android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtTwenty}"
+                            tools:text="@string/lbl_502" />
+
+                        <TextView
+                            android:id="@+id/txtFifteen"
+                            style="@style/txtInterregular12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:singleLine="true"
+                            android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtFifteen}"
+                            tools:text="@string/lbl_402" />
+
+                        <TextView
+                            android:id="@+id/txtZero"
+                            style="@style/txtInterregular12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:singleLine="true"
+                            android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtTen}"
+                            tools:text="@string/lbl_30" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearColumngroup2276"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_weight="0.94"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:id="@+id/frameStackgroup2278"
+                            android:layout_width="@dimen/_261pxh"
+                            android:layout_height="@dimen/_117pxv">
+
+                            <FrameLayout
+                                android:id="@+id/frameStackgroup2276"
+                                android:layout_width="@dimen/_259pxh"
+                                android:layout_height="@dimen/_117pxv"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/_1pxh"
+                                android:layout_marginEnd="@dimen/_1pxh">
+
+                                <ImageView
+                                    android:id="@+id/imageGroup2276"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_117pxh"
+                                    android:layout_gravity="start"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_group2276_2"
+                                    tools:ignore="ContentDescription"
+                                    tools:src="@drawable/img_group2276_2" />
+
+                                <ImageView
+                                    android:id="@+id/imageVectorFiftyTwo"
+                                    android:layout_width="@dimen/_258pxh"
+                                    android:layout_height="@dimen/_79pxh"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_1pxh"
+                                    android:layout_marginTop="@dimen/_20pxv"
+                                    android:layout_marginEnd="@dimen/_1pxh"
+                                    android:layout_marginBottom="@dimen/_18pxv"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_vector52_red_400"
+                                    tools:ignore="ContentDescription"
+                                    tools:src="@drawable/img_vector52_red_400" />
+                            </FrameLayout>
+
+                            <ImageView
+                                android:id="@+id/imageGroup2278"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_82pxv"
+                                android:layout_gravity="start"
+                                android:layout_marginTop="@dimen/_16pxv"
+                                android:layout_marginBottom="@dimen/_16pxv"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_group2278_red_400"
+                                tools:ignore="ContentDescription"
+                                tools:src="@drawable/img_group2278_red_400" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearRowpon"
+                            android:layout_width="262dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_marginEnd="@dimen/_12pxh"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtPon"
+                                style="@style/txtInterregular10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_weight="0.14"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtPon}"
+                                tools:text="@string/lbl_pon" />
+
+                            <TextView
+                                android:id="@+id/txtWto"
+                                style="@style/txtInterregular10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_18pxh"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_weight="0.16"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtWto}"
+                                tools:text="@string/lbl_wto" />
+
+                            <TextView
+                                android:id="@+id/txtRo"
+                                style="@style/txtInterregular10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_19pxh"
+                                android:layout_marginBottom="@dimen/_2pxv"
+                                android:layout_weight="0.13"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtRo}"
+                                tools:text="@string/lbl_ro" />
+
+                            <TextView
+                                android:id="@+id/txtCzw"
+                                style="@style/txtInterregular10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_20pxh"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_weight="0.17"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtCzw}"
+                                tools:text="@string/lbl_czw" />
+
+                            <TextView
+                                android:id="@+id/txtPi"
+                                style="@style/txtInterregular10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_16pxh"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_weight="0.11"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtPi}"
+                                tools:text="@string/lbl_pi" />
+
+                            <TextView
+                                android:id="@+id/txtSob"
+                                style="@style/txtInterregular10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_19pxh"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_weight="0.16"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtSob}"
+                                tools:text="@string/lbl_sob" />
+
+                            <TextView
+                                android:id="@+id/txtNie"
+                                style="@style/txtInterregular10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_18pxh"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_marginBottom="@dimen/_1pxv"
+                                android:layout_weight="0.13"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtNie}"
+                                tools:text="@string/lbl_nie" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearRowrectangle1339"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_21pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:id="@+id/viewRectangle1339"
+                                android:layout_width="@dimen/_20pxh"
+                                android:layout_height="@dimen/_8pxv"
+                                android:layout_marginTop="@dimen/_2pxv"
+                                android:layout_marginBottom="@dimen/_3pxv"
+                                android:background="@color/red_403" />
+
+                            <TextView
+                                android:id="@+id/txtTemperatura"
+                                style="@style/txtInterregular12_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_8pxh"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@{satatisticsThreeVM.satatisticsThreeModel.txtTemperatura}"
+                                tools:text="@string/lbl_temperatura" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineVectorFortyNine"
+                android:layout_width="@dimen/_340pxh"
+                android:layout_height="@dimen/_2pxv"
+                android:layout_gravity="top|start"
+                android:layout_marginTop="@dimen/_69pxv"
+                android:layout_marginBottom="@dimen/_69pxv"
+                android:background="@color/gray_201" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

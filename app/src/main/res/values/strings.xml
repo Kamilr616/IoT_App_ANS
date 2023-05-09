@@ -1,6 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-    <string name="app_name">IoT_App_ANS</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name">jakub_s_application</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_60">60</string>
+    <string name="lbl_ro">Śro</string>
+    <string name="lbl_20">20</string>
+    <string name="lbl_satatistics">Satatistics</string>
+    <string name="lbl_sob">Sob</string>
+    <string name="lbl_23">23</string>
+    <string name="lbl_902">-90</string>
+    <string name="lbl_statystyki">Statystyki</string>
+    <string name="lbl_25">25</string>
+    <string name="lbl_home">Home</string>
+    <string name="lbl_100">100</string>
+    <string name="lbl_302">-30</string>
+    <string name="lbl_witaj_xyz">Witaj, XYZ</string>
+    <string name="lbl_502">50</string>
+    <string name="lbl_autorzy">Autorzy</string>
+    <string name="msg_si_a_sygna_u_w">Siła sygnału
+WiFi</string>
+    <string name="msg_poniedzia_ek_0">Poniedziałek, 09 Styczeń</string>
+    <string name="msg_rednia_natrz_r">Średnia natrzęrzenie pola w tygodniu</string>
+    <string name="lbl_90">90</string>
+    <string name="lbl_50">50℃</string>
+    <string name="msg_rednia_si_a_sy">Średnia siła sygnału WiFi w tygodniu</string>
+    <string name="lbl_40dbm">-40dBm</string>
+    <string name="lbl_10">10</string>
+    <string name="msg_nat_rzenie_pola2">Natęrzenie pola
+magentycznego</string>
+    <string name="lbl_czw">Czw</string>
+    <string name="lbl_15">15</string>
+    <string name="lbl_temperatura">Temperatura</string>
+    <string name="msg_rednia_tempera">Średnia temperatura w tygodniu</string>
+    <string name="msg_temperatura_po">Temperatura
+pomieszczenia</string>
+    <string name="lbl">℃</string>
+    <string name="lbl_wilgotno">Wilgotność</string>
+    <string name="lbl_pon">Pon</string>
+    <string name="lbl_j_zyk">Język</string>
+    <string name="lbl_pi">Pią</string>
+    <string name="lbl_80">80</string>
+    <string name="msg_zmiana_nazwy_u">Zmiana nazwy użytkownika</string>
+    <string name="lbl_40">-40</string>
+    <string name="lbl_0">0</string>
+    <string name="lbl_45">-45</string>
+    <string name="msg_ustawienia_urz">Ustawienia urządzenia</string>
+    <string name="msg_rednia_wilgotn">Średnia wilgotność w tygodniu</string>
+    <string name="msg_informacje_o_ap">Informacje o aplikacji</string>
+    <string name="msg_lampka_przy_biu">Lampka przy biurku</string>
+    <string name="lbl_nat_rzenie_pola">Natęrzenie pola</string>
+    <string name="lbl_wto">Wto</string>
+    <string name="lbl_402">40</string>
+    <string name="msg_temperatura_ur">Temperatura
+urządzenia</string>
+    <string name="lbl_602">-60</string>
+    <string name="msg_temperatura_urz">Temperatura
+urządzenia</string>
+    <string name="msg_informacje_o_ur">Informacje o urządzeniu</string>
+    <string name="lbl_si_a_sygna_u">Siła sygnału</string>
+    <string name="lbl_dbm">dBm</string>
+    <string name="lbl_70">70</string>
+    <string name="lbl_ustawienia">Ustawienia</string>
+    <string name="lbl_30">30</string>
+    <string name="lbl_75">-75</string>
+    <string name="lbl_35">35</string>
+    <string name="lbl_75_c">75ºC</string>
+    <string name="lbl_33">33</string>
+    <string name="msg_wersja_aplikacj">Wersja aplikacji 1.02c</string>
+    <string name="lbl_settings">Settings</string>
+    <string name="lbl_36">36%</string>
+    <string name="lbl_23_c">23ºC</string>
+    <string name="lbl_232">23℃</string>
+    <string name="msg_nat_rzenie_pola">Natęrzenie pola magentycznego</string>
+    <string name="msg_zmiana_strefy_c">Zmiana strefy czasowej</string>
+    <string name="lbl_nie">Nie</string>
+    <string name="lbl_152">-15</string>
 </resources>
