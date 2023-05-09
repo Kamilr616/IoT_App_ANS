@@ -31,14 +31,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.686"
-            tools:text="@string/lbl_settings" />
+            android:text="@string/lbl_settings" />
 
         <ImageView
             android:id="@+id/imageSettings2"
             android:layout_width="@dimen/_19pxh"
             android:layout_height="@dimen/_20pxh"
             android:scaleType="fitXY"
-            android:src="@drawable/img_settings"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.717"
@@ -46,20 +45,19 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.319"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_settings" />
+            android:src="@drawable/img_settings" />
 
         <ImageView
             android:id="@+id/imageVolume2"
             android:layout_width="@dimen/_22pxh"
             android:layout_height="@dimen/_22pxh"
             android:scaleType="fitXY"
-            android:src="@drawable/img_volume"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_volume" />
+            android:src="@drawable/img_volume" />
 
         <ImageView
             android:id="@+id/imageHome2"
@@ -67,7 +65,6 @@
             android:layout_height="@dimen/_18pxh"
             android:layout_gravity="start"
             android:scaleType="fitXY"
-            android:src="@drawable/img_home"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.273"
@@ -75,7 +72,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.53"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_home" />
+            android:src="@drawable/img_home" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
@@ -103,8 +100,7 @@
             android:layout_marginEnd="@dimen/_12pxh"
             android:ellipsize="end"
             android:singleLine="true"
-            android:text="@string/lbl_ustawienia"
-            tools:text="@string/lbl_ustawienia" />
+            android:text="@string/lbl_ustawienia" />
 
         <LinearLayout
             android:id="@+id/linearRowustawieniaurz"
@@ -127,8 +123,7 @@
                 android:layout_weight="0.85"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{settingsVM.settingsModel.txtUstawieniaurz}"
-                tools:text="@string/msg_ustawienia_urz" />
+                android:text="@string/msg_ustawienia_urz" />
 
             <ImageView
                 android:id="@+id/imageAdvance"
@@ -139,9 +134,8 @@
                 android:layout_marginEnd="@dimen/_23pxh"
                 android:layout_marginBottom="@dimen/_3pxv"
                 android:scaleType="fitXY"
-                android:src="@drawable/img_advance"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_advance" />
+                android:src="@drawable/img_advance" />
         </LinearLayout>
 
         <LinearLayout
@@ -165,8 +159,7 @@
                 android:layout_weight="0.88"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{settingsVM.settingsModel.txtZmiananazwyu}"
-                tools:text="@string/msg_zmiana_nazwy_u" />
+                android:text="@string/msg_zmiana_nazwy_u" />
 
             <ImageView
                 android:id="@+id/imageAdvanceOne"
@@ -177,9 +170,8 @@
                 android:layout_marginEnd="@dimen/_22pxh"
                 android:layout_marginBottom="@dimen/_3pxv"
                 android:scaleType="fitXY"
-                android:src="@drawable/img_advance"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_advance" />
+                android:src="@drawable/img_advance" />
         </LinearLayout>
 
         <LinearLayout
@@ -203,8 +195,7 @@
                 android:layout_weight="0.86"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{settingsVM.settingsModel.txtZmianastrefyc}"
-                tools:text="@string/msg_zmiana_strefy_c" />
+                android:text="@string/msg_zmiana_strefy_c" />
 
             <ImageView
                 android:id="@+id/imageAdvanceTwo"
@@ -215,9 +206,8 @@
                 android:layout_marginEnd="@dimen/_25pxh"
                 android:layout_marginBottom="@dimen/_3pxv"
                 android:scaleType="fitXY"
-                android:src="@drawable/img_advance"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_advance" />
+                android:src="@drawable/img_advance" />
         </LinearLayout>
 
         <LinearLayout
@@ -241,8 +231,7 @@
                 android:layout_weight="0.6"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{settingsVM.settingsModel.txtJzyk}"
-                tools:text="@string/lbl_j_zyk" />
+                android:text="@string/lbl_j_zyk" />
 
             <ImageView
                 android:id="@+id/imageAdvanceThree"
@@ -252,9 +241,8 @@
                 android:layout_marginTop="@dimen/_5pxv"
                 android:layout_marginEnd="@dimen/_25pxh"
                 android:scaleType="fitXY"
-                android:src="@drawable/img_advance"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_advance" />
+                android:src="@drawable/img_advance" />
         </LinearLayout>
 
         <LinearLayout
@@ -278,8 +266,7 @@
                 android:layout_weight="0.85"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{settingsVM.settingsModel.txtInformacjeoap}"
-                tools:text="@string/msg_informacje_o_ap" />
+                android:text="@string/msg_informacje_o_ap" />
 
             <ImageView
                 android:id="@+id/imageAdvanceFour"
@@ -290,9 +277,8 @@
                 android:layout_marginEnd="@dimen/_23pxh"
                 android:layout_marginBottom="@dimen/_3pxv"
                 android:scaleType="fitXY"
-                android:src="@drawable/img_advance"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_advance" />
+                android:src="@drawable/img_advance" />
         </LinearLayout>
 
         <LinearLayout
@@ -316,8 +302,7 @@
                 android:layout_weight="0.86"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{settingsVM.settingsModel.txtInformacjeour}"
-                tools:text="@string/msg_informacje_o_ur" />
+                android:text="@string/msg_informacje_o_ur" />
 
             <ImageView
                 android:id="@+id/imageAdvanceFive"
@@ -328,9 +313,8 @@
                 android:layout_marginEnd="@dimen/_23pxh"
                 android:layout_marginBottom="@dimen/_3pxv"
                 android:scaleType="fitXY"
-                android:src="@drawable/img_advance"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_advance" />
+                android:src="@drawable/img_advance" />
         </LinearLayout>
 
         <LinearLayout
@@ -354,8 +338,7 @@
                 android:layout_weight="0.67"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="@{settingsVM.settingsModel.txtAutorzy}"
-                tools:text="@string/lbl_autorzy" />
+                android:text="@string/lbl_autorzy" />
 
             <ImageView
                 android:id="@+id/imageAdvanceSix"
@@ -366,9 +349,8 @@
                 android:layout_marginEnd="@dimen/_23pxh"
                 android:layout_marginBottom="@dimen/_3pxv"
                 android:scaleType="fitXY"
-                android:src="@drawable/img_advance"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_advance" />
+                android:src="@drawable/img_advance" />
         </LinearLayout>
 
     </LinearLayout>
@@ -380,11 +362,10 @@
         android:layout_height="wrap_content"
         android:ellipsize="end"
         android:singleLine="true"
-        android:text="@{settingsVM.settingsModel.txtWersjaaplikacj}"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.895"
-        tools:text="@string/msg_wersja_aplikacj" />
+        android:text="@string/msg_wersja_aplikacj" />
 </androidx.constraintlayout.widget.ConstraintLayout>
