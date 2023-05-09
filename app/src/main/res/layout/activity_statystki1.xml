@@ -100,14 +100,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.745"
-            tools:text="@string/lbl_satatistics" />
+            android:text="@string/lbl_satatistics" />
 
         <ImageView
             android:id="@+id/imageSettings2"
             android:layout_width="@dimen/_19pxh"
             android:layout_height="@dimen/_20pxh"
             android:scaleType="fitXY"
-            android:src="@drawable/img_settings"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.717"
@@ -115,21 +114,20 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.51"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_settings" />
+            android:src="@drawable/img_settings" />
 
         <ImageView
             android:id="@+id/imageVolume2"
             android:layout_width="@dimen/_22pxh"
             android:layout_height="@dimen/_22pxh"
             android:scaleType="fitXY"
-            android:src="@drawable/img_volume"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.355"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_volume" />
+            android:src="@drawable/img_volume" />
 
         <ImageView
             android:id="@+id/imageHome2"
@@ -137,7 +135,6 @@
             android:layout_height="@dimen/_18pxh"
             android:layout_gravity="start"
             android:scaleType="fitXY"
-            android:src="@drawable/img_home"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.273"
@@ -145,7 +142,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.53"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_home" />
+            android:src="@drawable/img_home" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -156,14 +153,13 @@
         android:layout_gravity="center_horizontal"
         android:ellipsize="end"
         android:singleLine="true"
-        android:text="@{satatisticsOneVM.satatisticsOneModel.txtStatystyki}"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.064"
-        tools:text="@string/lbl_statystyki" />
+        android:text="@string/lbl_statystyki" />
 
     <LinearLayout
         android:id="@+id/linearColumntemperaturapom"
@@ -194,8 +190,7 @@
                 android:layout_marginTop="@dimen/_29pxv"
                 android:layout_marginBottom="@dimen/_11pxv"
                 android:layout_weight="0.62"
-                android:text="@{satatisticsOneVM.satatisticsOneModel.txtTemperaturapom}"
-                tools:text="@string/msg_temperatura_po" />
+                android:text="@string/msg_temperatura_po" />
 
             <ImageView
                 android:id="@+id/image38934672"
@@ -204,7 +199,7 @@
                 android:layout_marginStart="@dimen/_45pxh"
                 android:scaleType="fitXY"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_38934671" />
+                android:src="@drawable/img_38934671" />
         </LinearLayout>
 
         <FrameLayout
@@ -236,8 +231,7 @@
                     android:layout_marginEnd="@dimen/_15pxh"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="@{satatisticsOneVM.satatisticsOneModel.txtRedniatempera}"
-                    tools:text="@string/msg_rednia_tempera" />
+                    android:text="@string/msg_rednia_tempera" />
 
                 <LinearLayout
                     android:id="@+id/linearRowtwentythree"
@@ -258,8 +252,7 @@
                         android:layout_weight="0.92"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="@{satatisticsOneVM.satatisticsOneModel.txtTwentyThree}"
-                        tools:text="@string/lbl_232" />
+                        android:text="@string/lbl_232" />
 
                     <ImageView
                         android:id="@+id/imageGroup2275"
@@ -268,9 +261,8 @@
                         android:layout_marginStart="@dimen/_202pxh"
                         android:layout_marginBottom="@dimen/_9pxv"
                         android:scaleType="fitXY"
-                        android:src="@drawable/img_group2275"
                         tools:ignore="ContentDescription"
-                        tools:src="@drawable/img_group2275" />
+                        android:src="@drawable/img_group2275" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -308,8 +300,7 @@
                                 android:ellipsize="end"
                                 android:gravity="top|start"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtForty}"
-                                tools:text="@string/lbl_402" />
+                                android:text="@string/lbl_402" />
 
                             <TextView
                                 android:id="@+id/txtOne"
@@ -323,8 +314,7 @@
                                 android:ellipsize="end"
                                 android:gravity="top|start"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtOne}"
-                                tools:text="@string/lbl" />
+                                android:text="@string/lbl" />
                         </FrameLayout>
 
                         <TextView
@@ -337,8 +327,7 @@
                             android:ellipsize="end"
                             android:gravity="center_horizontal"
                             android:singleLine="true"
-                            android:text="@{satatisticsOneVM.satatisticsOneModel.txtThirtyFive}"
-                            tools:text="@string/lbl_35" />
+                            android:text="@string/lbl_35" />
 
                         <TextView
                             android:id="@+id/txtThirty"
@@ -350,8 +339,7 @@
                             android:ellipsize="end"
                             android:gravity="center_horizontal"
                             android:singleLine="true"
-                            android:text="@{satatisticsOneVM.satatisticsOneModel.txtThirty}"
-                            tools:text="@string/lbl_30" />
+                            android:text="@string/lbl_30" />
 
                         <TextView
                             android:id="@+id/txtTwentyFive"
@@ -363,8 +351,7 @@
                             android:ellipsize="end"
                             android:gravity="end"
                             android:singleLine="true"
-                            android:text="@{satatisticsOneVM.satatisticsOneModel.txtTwentyFive}"
-                            tools:text="@string/lbl_25" />
+                            android:text="@string/lbl_25" />
 
                         <TextView
                             android:id="@+id/txtTwenty"
@@ -376,8 +363,7 @@
                             android:ellipsize="end"
                             android:gravity="end"
                             android:singleLine="true"
-                            android:text="@{satatisticsOneVM.satatisticsOneModel.txtTwenty}"
-                            tools:text="@string/lbl_20" />
+                            android:text="@string/lbl_20" />
 
                         <TextView
                             android:id="@+id/txtFifteen"
@@ -389,8 +375,7 @@
                             android:ellipsize="end"
                             android:gravity="end"
                             android:singleLine="true"
-                            android:text="@{satatisticsOneVM.satatisticsOneModel.txtFifteen}"
-                            tools:text="@string/lbl_15" />
+                            android:text="@string/lbl_15" />
 
                         <TextView
                             android:id="@+id/txtTen"
@@ -402,8 +387,7 @@
                             android:ellipsize="end"
                             android:gravity="end"
                             android:singleLine="true"
-                            android:text="@{satatisticsOneVM.satatisticsOneModel.txtTen}"
-                            tools:text="@string/lbl_10" />
+                            android:text="@string/lbl_10" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -429,9 +413,8 @@
                                 android:layout_marginStart="@dimen/_2pxh"
                                 android:layout_marginEnd="@dimen/_1pxh"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/img_group2276"
                                 tools:ignore="ContentDescription"
-                                tools:src="@drawable/img_group2276" />
+                                android:src="@drawable/img_group2276" />
 
                             <FrameLayout
                                 android:id="@+id/frameStackgroup2278"
@@ -447,9 +430,8 @@
                                     android:layout_height="@dimen/_44pxh"
                                     android:layout_gravity="start"
                                     android:scaleType="fitXY"
-                                    android:src="@drawable/img_group2278"
                                     tools:ignore="ContentDescription"
-                                    tools:src="@drawable/img_group2278" />
+                                    android:src="@drawable/img_group2278" />
 
                                 <ImageView
                                     android:id="@+id/imageVectorFiftyTwo"
@@ -461,9 +443,8 @@
                                     android:layout_marginEnd="@dimen/_2pxh"
                                     android:layout_marginBottom="@dimen/_1pxv"
                                     android:scaleType="fitXY"
-                                    android:src="@drawable/img_vector52"
                                     tools:ignore="ContentDescription"
-                                    tools:src="@drawable/img_vector52" />
+                                    android:src="@drawable/img_vector52" />
                             </FrameLayout>
                         </FrameLayout>
 
@@ -486,8 +467,7 @@
                                 android:layout_weight="0.14"
                                 android:ellipsize="end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtPon}"
-                                tools:text="@string/lbl_pon" />
+                                android:text="@string/lbl_pon" />
 
                             <TextView
                                 android:id="@+id/txtWto"
@@ -500,8 +480,7 @@
                                 android:layout_weight="0.16"
                                 android:ellipsize="end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtWto}"
-                                tools:text="@string/lbl_wto" />
+                                android:text="@string/lbl_wto" />
 
                             <TextView
                                 android:id="@+id/txtRo"
@@ -513,8 +492,7 @@
                                 android:layout_weight="0.13"
                                 android:ellipsize="end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtRo}"
-                                tools:text="@string/lbl_ro" />
+                                android:text="@string/lbl_ro" />
 
                             <TextView
                                 android:id="@+id/txtCzw"
@@ -527,8 +505,7 @@
                                 android:layout_weight="0.17"
                                 android:ellipsize="end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtCzw}"
-                                tools:text="@string/lbl_czw" />
+                                android:text="@string/lbl_czw" />
 
                             <TextView
                                 android:id="@+id/txtPi"
@@ -540,8 +517,7 @@
                                 android:layout_weight="0.11"
                                 android:ellipsize="end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtPi}"
-                                tools:text="@string/lbl_pi" />
+                                android:text="@string/lbl_pi" />
 
                             <TextView
                                 android:id="@+id/txtSob"
@@ -554,8 +530,7 @@
                                 android:layout_weight="0.16"
                                 android:ellipsize="end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtSob}"
-                                tools:text="@string/lbl_sob" />
+                                android:text="@string/lbl_sob" />
 
                             <TextView
                                 android:id="@+id/txtNie"
@@ -568,8 +543,7 @@
                                 android:layout_weight="0.13"
                                 android:ellipsize="end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtNie}"
-                                tools:text="@string/lbl_nie" />
+                                android:text="@string/lbl_nie" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -598,8 +572,7 @@
                                 android:layout_marginStart="@dimen/_8pxh"
                                 android:ellipsize="end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtTemperatura}"
-                                tools:text="@string/lbl_temperatura" />
+                                android:text="@string/lbl_temperatura" />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -639,8 +612,7 @@
                         android:layout_marginEnd="@dimen/_15pxh"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="@{satatisticsOneVM.satatisticsOneModel.txtRedniatemperaOne}"
-                        tools:text="@string/msg_rednia_tempera" />
+                        android:text="@string/msg_rednia_tempera" />
 
                     <LinearLayout
                         android:id="@+id/linearRowtwentythreeOne"
@@ -661,8 +633,7 @@
                             android:layout_weight="0.92"
                             android:ellipsize="end"
                             android:singleLine="true"
-                            android:text="@{satatisticsOneVM.satatisticsOneModel.txtTwentyThreeOne}"
-                            tools:text="@string/lbl_232" />
+                            android:text="@string/lbl_232" />
 
                         <ImageView
                             android:id="@+id/imageGroup2275One"
@@ -671,9 +642,8 @@
                             android:layout_marginStart="@dimen/_202pxh"
                             android:layout_marginBottom="@dimen/_9pxv"
                             android:scaleType="fitXY"
-                            android:src="@drawable/img_group2275"
                             tools:ignore="ContentDescription"
-                            tools:src="@drawable/img_group2275" />
+                            android:src="@drawable/img_group2275" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -713,8 +683,7 @@
                                     android:ellipsize="end"
                                     android:gravity="top|start"
                                     android:singleLine="true"
-                                    android:text="@{satatisticsOneVM.satatisticsOneModel.txtTwo}"
-                                    tools:text="@string/lbl" />
+                                    android:text="@string/lbl" />
 
                                 <TextView
                                     android:id="@+id/txtFortyOne"
@@ -726,8 +695,7 @@
                                     android:ellipsize="end"
                                     android:gravity="center_horizontal|end"
                                     android:singleLine="true"
-                                    android:text="@{satatisticsOneVM.satatisticsOneModel.txtFortyOne}"
-                                    tools:text="@string/lbl_402" />
+                                    android:text="@string/lbl_402" />
                             </FrameLayout>
 
                             <TextView
@@ -740,8 +708,7 @@
                                 android:ellipsize="end"
                                 android:gravity="center_horizontal|end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtThirtyFiveOne}"
-                                tools:text="@string/lbl_35" />
+                                android:text="@string/lbl_35" />
 
                             <TextView
                                 android:id="@+id/txtThirtyOne"
@@ -753,8 +720,7 @@
                                 android:ellipsize="end"
                                 android:gravity="center_horizontal|end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtThirtyOne}"
-                                tools:text="@string/lbl_30" />
+                                android:text="@string/lbl_30" />
 
                             <TextView
                                 android:id="@+id/txtTwentyFiveOne"
@@ -766,8 +732,7 @@
                                 android:ellipsize="end"
                                 android:gravity="end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtTwentyFiveOne}"
-                                tools:text="@string/lbl_25" />
+                                android:text="@string/lbl_25" />
 
                             <TextView
                                 android:id="@+id/txtTwentyOne"
@@ -779,8 +744,7 @@
                                 android:ellipsize="end"
                                 android:gravity="end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtTwentyOne}"
-                                tools:text="@string/lbl_20" />
+                                android:text="@string/lbl_20" />
 
                             <TextView
                                 android:id="@+id/txtFifteenOne"
@@ -792,8 +756,7 @@
                                 android:ellipsize="end"
                                 android:gravity="end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtFifteenOne}"
-                                tools:text="@string/lbl_15" />
+                                android:text="@string/lbl_15" />
 
                             <TextView
                                 android:id="@+id/txtTenOne"
@@ -805,8 +768,7 @@
                                 android:ellipsize="end"
                                 android:gravity="end"
                                 android:singleLine="true"
-                                android:text="@{satatisticsOneVM.satatisticsOneModel.txtTenOne}"
-                                tools:text="@string/lbl_10" />
+                                android:text="@string/lbl_10" />
                         </LinearLayout>
 
                         <LinearLayout
@@ -832,9 +794,8 @@
                                     android:layout_marginStart="@dimen/_2pxh"
                                     android:layout_marginEnd="@dimen/_1pxh"
                                     android:scaleType="fitXY"
-                                    android:src="@drawable/img_group2276_117x259"
                                     tools:ignore="ContentDescription"
-                                    tools:src="@drawable/img_group2276_117x259" />
+                                    android:src="@drawable/img_group2276_117x259" />
 
                                 <FrameLayout
                                     android:id="@+id/frameStackgroup2278One"
@@ -850,9 +811,8 @@
                                         android:layout_height="@dimen/_44pxh"
                                         android:layout_gravity="start"
                                         android:scaleType="fitXY"
-                                        android:src="@drawable/img_group2278_light_green_a700"
                                         tools:ignore="ContentDescription"
-                                        tools:src="@drawable/img_group2278_light_green_a700" />
+                                        android:src="@drawable/img_group2278_light_green_a700" />
 
                                     <ImageView
                                         android:id="@+id/imageVectorFiftyTwoOne"
@@ -864,9 +824,8 @@
                                         android:layout_marginEnd="@dimen/_2pxh"
                                         android:layout_marginBottom="@dimen/_1pxv"
                                         android:scaleType="fitXY"
-                                        android:src="@drawable/img_vector52_light_green_a700"
                                         tools:ignore="ContentDescription"
-                                        tools:src="@drawable/img_vector52_light_green_a700" />
+                                        android:src="@drawable/img_vector52_light_green_a700" />
                                 </FrameLayout>
                             </FrameLayout>
 
@@ -889,8 +848,7 @@
                                     android:layout_weight="0.14"
                                     android:ellipsize="end"
                                     android:singleLine="true"
-                                    android:text="@{satatisticsOneVM.satatisticsOneModel.txtPonOne}"
-                                    tools:text="@string/lbl_pon" />
+                                    android:text="@string/lbl_pon" />
 
                                 <TextView
                                     android:id="@+id/txtWtoOne"
@@ -903,8 +861,7 @@
                                     android:layout_weight="0.16"
                                     android:ellipsize="end"
                                     android:singleLine="true"
-                                    android:text="@{satatisticsOneVM.satatisticsOneModel.txtWtoOne}"
-                                    tools:text="@string/lbl_wto" />
+                                    android:text="@string/lbl_wto" />
 
                                 <TextView
                                     android:id="@+id/txtRoOne"
@@ -930,8 +887,7 @@
                                     android:layout_weight="0.17"
                                     android:ellipsize="end"
                                     android:singleLine="true"
-                                    android:text="@{satatisticsOneVM.satatisticsOneModel.txtCzwOne}"
-                                    tools:text="@string/lbl_czw" />
+                                    android:text="@string/lbl_czw" />
 
                                 <TextView
                                     android:id="@+id/txtPiOne"
@@ -943,8 +899,7 @@
                                     android:layout_weight="0.11"
                                     android:ellipsize="end"
                                     android:singleLine="true"
-                                    android:text="@{satatisticsOneVM.satatisticsOneModel.txtPiOne}"
-                                    tools:text="@string/lbl_pi" />
+                                    android:text="@string/lbl_pi" />
 
                                 <TextView
                                     android:id="@+id/txtSobOne"
@@ -957,8 +912,7 @@
                                     android:layout_weight="0.16"
                                     android:ellipsize="end"
                                     android:singleLine="true"
-                                    android:text="@{satatisticsOneVM.satatisticsOneModel.txtSobOne}"
-                                    tools:text="@string/lbl_sob" />
+                                    android:text="@string/lbl_sob" />
 
                                 <TextView
                                     android:id="@+id/txtNieOne"
@@ -971,8 +925,7 @@
                                     android:layout_weight="0.13"
                                     android:ellipsize="end"
                                     android:singleLine="true"
-                                    android:text="@{satatisticsOneVM.satatisticsOneModel.txtNieOne}"
-                                    tools:text="@string/lbl_nie" />
+                                    android:text="@string/lbl_nie" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -1001,8 +954,7 @@
                                     android:layout_marginStart="@dimen/_8pxh"
                                     android:ellipsize="end"
                                     android:singleLine="true"
-                                    android:text="@{satatisticsOneVM.satatisticsOneModel.txtTemperaturaOne}"
-                                    tools:text="@string/lbl_temperatura" />
+                                    android:text="@string/lbl_temperatura" />
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
