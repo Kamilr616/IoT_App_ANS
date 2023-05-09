@@ -199,7 +199,6 @@
 
             <ImageView
                 android:id="@+id/image38934672"
-                android:imageRes="@{@drawable/img_38934671}"
                 android:layout_width="@dimen/_105pxh"
                 android:layout_height="@dimen/_105pxh"
                 android:layout_marginStart="@dimen/_45pxh"

@@ -206,7 +206,6 @@
                 android:layout_width="@dimen/_74pxh"
                 android:layout_height="@dimen/_74pxh"
                 android:layout_marginStart="@dimen/_22pxh"
-                android:imageRes="@{@drawable/img_waterdrop1190}"
                 android:scaleType="fitXY"
                 tools:ignore="ContentDescription"
                 tools:src="@drawable/img_waterdrop1190" />

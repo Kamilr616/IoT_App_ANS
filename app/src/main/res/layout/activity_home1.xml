@@ -30,7 +30,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.228"
-            tools:text="@string/msg_temperatura_po" />
+            android:text="@string/msg_temperatura_po" />
 
         <TextView
             android:id="@+id/txt23C"
@@ -45,11 +45,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.804"
-            tools:text="@string/lbl_23_c" />
+            android:text="@string/lbl_23_c" />
 
         <ImageView
             android:id="@+id/Domek"
-            android:imageRes="@{@drawable/img_38934671}"
             android:layout_width="105dp"
             android:layout_height="105dp"
             android:scaleType="fitXY"
@@ -59,7 +58,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_38934671" />
+            android:src="@drawable/img_38934671" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -68,13 +67,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
         android:ellipsize="end"
         android:singleLine="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtWitajXYZ2"
-        tools:text="@string/msg_poniedzia_ek_0" />
+        android:text="@string/msg_poniedzia_ek_0" />
 
     <TextView
         android:id="@+id/txtWitajXYZ2"
@@ -90,7 +89,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.079"
-        tools:text="@string/lbl_witaj_xyz" />
+        android:text="@string/lbl_witaj_xyz" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/Wilgotnosc"
@@ -112,7 +111,6 @@
             android:layout_width="@dimen/_49pxh"
             android:layout_height="@dimen/_49pxh"
             android:layout_gravity="start"
-            android:imageRes="@{@drawable/img_waterdrop1190}"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -121,7 +119,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.068"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_waterdrop1190" />
+            android:src="@drawable/img_waterdrop1190" />
 
         <TextView
             android:id="@+id/txtThirtySix2"
@@ -137,7 +135,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.877"
-            tools:text="@string/lbl_36" />
+            android:text="@string/lbl_36" />
 
         <TextView
             android:id="@+id/txtWilgotno2"
@@ -152,7 +150,7 @@
             app:layout_constraintHorizontal_bias="0.296"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/lbl_wilgotno" />
+            android:text="@string/lbl_wilgotno" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -175,7 +173,6 @@
             android:layout_width="@dimen/_44pxh"
             android:layout_height="@dimen/_44pxh"
             android:scaleType="fitXY"
-            android:src="@drawable/img_55948741"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.142"
@@ -183,7 +180,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.093"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_55948741" />
+            android:src="@drawable/img_55948741" />
 
         <TextView
             android:id="@+id/txtTemperaturaurz2"
@@ -196,7 +193,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.495"
-            tools:text="@string/msg_temperatura_urz" />
+            android:text="@string/msg_temperatura_urz" />
 
         <TextView
             android:id="@+id/txt75C2"
@@ -211,7 +208,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.88"
-            tools:text="@string/lbl_75_c" />
+            android:text="@string/lbl_75_c" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -239,7 +236,7 @@
             app:layout_constraintHorizontal_bias="0.8"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/msg_nat_rzenie_pola2" />
+            android:text="@string/msg_nat_rzenie_pola2" />
 
         <TextView
             android:id="@+id/txtThirtySix3"
@@ -256,15 +253,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
-            tools:text="@string/lbl_23" />
+            android:text="@string/lbl_23" />
 
         <ImageView
             android:id="@+id/NS"
             android:layout_width="@dimen/_49pxh"
             android:layout_height="@dimen/_49pxh"
-            android:layout_gravity="start"
-            android:imageRes="@{@drawable/img_waterdrop1190}"
-            android:scaleType="fitXY"
+            android:layout_gravity="start" android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.149"
@@ -272,7 +267,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.058"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_32019951" />
+            android:src="@drawable/img_32019951" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -306,14 +301,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.849"
-            tools:text="@string/lbl_40dbm" />
+            android:text="@string/lbl_40dbm" />
 
         <ImageView
             android:id="@+id/image3"
             android:layout_width="@dimen/_44pxh"
             android:layout_height="@dimen/_44pxh"
             android:scaleType="fitXY"
-            android:src="@drawable/img_55948741"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.142"
@@ -321,7 +315,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.149"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_wifianalyzer1" />
+            android:src="@drawable/img_wifianalyzer1" />
 
         <TextView
             android:id="@+id/txtTemperaturaurz4"
@@ -333,7 +327,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.523"
-            tools:text="@string/msg_si_a_sygna_u_w" />
+            android:text="@string/msg_si_a_sygna_u_w" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -362,14 +356,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.692"
-            tools:text="@string/lbl_home" />
+            android:text="@string/lbl_home" />
 
         <ImageView
             android:id="@+id/imageSettings2"
             android:layout_width="@dimen/_19pxh"
             android:layout_height="@dimen/_20pxh"
             android:scaleType="fitXY"
-            android:src="@drawable/img_settings"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.717"
@@ -377,20 +370,19 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.531"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_settings" />
+            android:src="@drawable/img_settings" />
 
         <ImageView
             android:id="@+id/imageVolume2"
             android:layout_width="@dimen/_22pxh"
             android:layout_height="@dimen/_22pxh"
             android:scaleType="fitXY"
-            android:src="@drawable/img_volume"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_volume" />
+            android:src="@drawable/img_volume" />
 
         <ImageView
             android:id="@+id/imageHome2"
@@ -398,7 +390,6 @@
             android:layout_height="@dimen/_18pxh"
             android:layout_gravity="start"
             android:scaleType="fitXY"
-            android:src="@drawable/img_home"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.276"
@@ -406,7 +397,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.326"
             tools:ignore="ContentDescription"
-            tools:src="@drawable/img_home" />
+            android:src="@drawable/img_home" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

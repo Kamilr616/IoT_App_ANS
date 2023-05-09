@@ -203,7 +203,6 @@
                 android:layout_height="@dimen/_79pxh"
                 android:layout_marginStart="@dimen/_39pxh"
                 android:layout_marginTop="@dimen/_4pxv"
-                android:imageRes="@{@drawable/img_wifianalyzer1}"
                 android:scaleType="fitXY"
                 tools:ignore="ContentDescription"
                 tools:src="@drawable/img_wifianalyzer1" />

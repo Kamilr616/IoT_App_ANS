@@ -202,7 +202,6 @@
                 android:layout_height="@dimen/_72pxh"
                 android:layout_marginStart="@dimen/_39pxh"
                 android:layout_marginTop="@dimen/_1pxv"
-                android:imageRes="@{@drawable/img_32019951}"
                 android:scaleType="fitXY"
                 tools:ignore="ContentDescription"
                 tools:src="@drawable/img_32019951" />
