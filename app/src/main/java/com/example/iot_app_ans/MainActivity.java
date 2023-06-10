@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
-
+//Jakub
     private void NewActivity() {
         setContentView(R.layout.activity_settings);
     }
