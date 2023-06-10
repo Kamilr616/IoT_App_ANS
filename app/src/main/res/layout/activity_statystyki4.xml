@@ -100,7 +100,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.745"
-            tools:text="@string/lbl_satatistics" />
+            android:text="@string/lbl_satatistics" />
 
         <ImageView
             android:id="@+id/imageSettings2"
@@ -114,8 +114,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.51"
-            tools:ignore="ContentDescription"
-            tools:src="@drawable/img_settings" />
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/imageVolume2"
@@ -128,8 +127,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.355"
-            tools:ignore="ContentDescription"
-            tools:src="@drawable/img_volume" />
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/imageHome2"
@@ -144,8 +142,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.53"
-            tools:ignore="ContentDescription"
-            tools:src="@drawable/img_home" />
+            tools:ignore="ContentDescription"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -156,14 +153,13 @@
         android:layout_gravity="center_horizontal"
         android:ellipsize="end"
         android:singleLine="true"
-        android:text="@{satatisticsOneVM.satatisticsOneModel.txtStatystyki}"
+        android:text="@string/lbl_statystyki"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.064"
-        tools:text="@string/lbl_statystyki" />
+        app:layout_constraintVertical_bias="0.064" />
 
     <LinearLayout
         android:id="@+id/linearColumnnatrzeniepola"
@@ -193,8 +189,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_6pxv"
                 android:layout_weight="0.72"
-                android:text="@{satatisticsFourVM.satatisticsFourModel.txtNatrzeniepola}"
-                tools:text="@string/msg_nat_rzenie_pola2" />
+                android:text="@string/msg_nat_rzenie_pola2" />
 
             <ImageView
                 android:id="@+id/image32019951"
@@ -204,7 +199,7 @@
                 android:layout_marginTop="@dimen/_1pxv"
                 android:scaleType="fitXY"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_32019951" />
+                android:src="@drawable/img_32019951" />
         </LinearLayout>
 
     </LinearLayout>

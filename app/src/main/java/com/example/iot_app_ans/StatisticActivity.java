@@ -83,6 +83,10 @@ public class StatisticActivity extends AppCompatActivity {
                     Intent i = new Intent(this, StatisticActivity2.class);
                     startActivity(i);
                 }
+                else if (x1 < x2) {
+                    Intent i = new Intent(this, StatisticActivity5.class);
+                    startActivity(i);
+                }
                 break;
         }
         return false;
