@@ -5,14 +5,36 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.widget.Button;
 
 public class MainActivity2 extends AppCompatActivity {
     float x1, x2, y1, y2;
+    Button Statistic;
+    Button Settings;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home2);
+
+        Statistic = (Button) findViewById(R.id. statisticButton2);
+
+        Statistic.setOnClickListener(view -> openStatistic());
+
+        Settings = (Button) findViewById(R.id. settings2);
+
+        Settings.setOnClickListener(view -> openSettings());
     }
+
+    private void openSettings() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
+    private void openStatistic() {
+        Intent intent = new Intent(this, StatisticActivity.class);
+        startActivity(intent);
+    }
+
 
     public boolean onTouchEvent(MotionEvent touchevent) {
         switch (touchevent.getAction()) {

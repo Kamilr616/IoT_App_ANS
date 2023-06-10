@@ -1,6 +1,9 @@
 package com.example.iot_app_ans;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Binder;
 import android.os.Bundle;
 import android.graphics.Color;
 import com.github.mikephil.charting.charts.LineChart;
@@ -10,15 +13,37 @@ import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import java.util.ArrayList;
 import java.util.List;
+import android.widget.Button;
 
 public class StatisticActivity extends AppCompatActivity {
     private LineChart chart;
+    Button Settings;
+
+    Button Home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statystki1);
         chart = findViewById(R.id.chart);
         createTemperatureChart();
+
+        Settings = (Button)findViewById(R.id. settings3);
+
+        Settings.setOnClickListener(view -> openSettigns());
+
+        Home = (Button) findViewById(R.id. home4);
+        Home.setOnClickListener(view -> openHome());
+
+    }
+
+    private void openHome() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    private void openSettigns() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
     }
     private void createTemperatureChart() {
         List<Entry> entries = new ArrayList<>();

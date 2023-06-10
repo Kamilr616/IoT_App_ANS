@@ -8,26 +8,32 @@ import android.view.View;
 import android.widget.Button;
 
 public class SettingsActivity extends AppCompatActivity {
-    Button buttonStatistic ;
+    Button Statistic;
+    Button Home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        buttonStatistic = findViewById(R.id. Statistic1);
+        Statistic = (Button)findViewById(R.id. statisticButton3);
 
-        buttonStatistic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NewActivity();
-            }
-        });
+        Statistic.setOnClickListener(view -> openStatistic());
+
+        Home = (Button)findViewById(R.id. Home);
+
+        Home.setOnClickListener(view -> openHome());
 
 
     }
 
-    private void NewActivity() {
+    private void openHome() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    private void openStatistic() {
         Intent intent = new Intent(this, StatisticActivity.class);
         startActivity(intent);
     }
+
 }
