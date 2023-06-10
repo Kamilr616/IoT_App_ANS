@@ -32,7 +32,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         buttonSettings = findViewById(R.id. Settings);
-
+        Statistic = (Button) findViewById(R.id.StatisticButton);
+        Statistic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openStatistic();
+            }
+        });
 
         buttonSettings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void openStatistic() {
+         Intent intent = new Intent(this, StatisticActivity.class);
+         startActivity(intent);
     }
 
     public boolean onTouchEvent(MotionEvent touchevent){

@@ -169,8 +169,8 @@
     <LinearLayout
         android:id="@+id/linearColumnsiasygnauwi"
         style="@style/groupStylegray_200cornerRadius"
-        android:layout_width="374dp"
-        android:layout_height="615dp"
+        android:layout_width="354dp"
+        android:layout_height="534dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -230,7 +230,6 @@
                 <TextView
                     android:id="@+id/txtRedniatempera"
                     style="@style/txtRobotoromansemibold16"
-                    tools:text="@string/msg_rednia_si_a_sy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_15pxh"
@@ -238,7 +237,8 @@
                     android:layout_marginEnd="@dimen/_15pxh"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="@{satatisticsSixVM.satatisticsSixModel.txtRedniatempera}" />
+                    android:text="@{satatisticsSixVM.satatisticsSixModel.txtRedniatempera}"
+                    tools:text="@string/msg_rednia_si_a_sy" />
 
                 <LinearLayout
                     android:id="@+id/linearRowtwentythree"
@@ -253,25 +253,25 @@
                     <TextView
                         android:id="@+id/txtTwentyThree"
                         style="@style/txtRobotoromanbold14"
-                        tools:text="@string/lbl_33"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_2pxv"
                         android:layout_weight="0.85"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="@{satatisticsSixVM.satatisticsSixModel.txtTwentyThree}" />
+                        android:text="@{satatisticsSixVM.satatisticsSixModel.txtTwentyThree}"
+                        tools:text="@string/lbl_33" />
 
                     <ImageView
                         android:id="@+id/imageGroup2275"
-                        tools:ignore="ContentDescription"
-                        tools:src="@drawable/img_group2275"
                         android:layout_width="@dimen/_2pxh"
                         android:layout_height="@dimen/_10pxh"
                         android:layout_marginStart="@dimen/_217pxh"
                         android:layout_marginBottom="@dimen/_9pxv"
                         android:scaleType="fitXY"
-                        android:src="@drawable/img_group2275" />
+                        android:src="@drawable/img_group2275"
+                        tools:ignore="ContentDescription"
+                        tools:src="@drawable/img_group2275" />
                 </LinearLayout>
 
                 <LinearLayout

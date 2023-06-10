@@ -168,8 +168,8 @@
     <LinearLayout
         android:id="@+id/linearColumntemperaturaurz"
         style="@style/groupStylegray_200cornerRadius"
-        android:layout_width="374dp"
-        android:layout_height="615dp"
+        android:layout_width="354dp"
+        android:layout_height="534dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"

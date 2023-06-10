@@ -153,25 +153,27 @@
         android:layout_gravity="center_horizontal"
         android:ellipsize="end"
         android:singleLine="true"
+        android:text="@string/lbl_statystyki"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.064"
-        android:text="@string/lbl_statystyki" />
+        app:layout_constraintVertical_bias="0.065" />
 
     <LinearLayout
         android:id="@+id/linearColumntemperaturapom"
         style="@style/groupStylegray_200cornerRadius"
-        android:layout_width="374dp"
-        android:layout_height="615dp"
+        android:layout_width="354dp"
+        android:layout_height="534dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
 
         <LinearLayout
             android:id="@+id/linearRowtemperaturapom"
@@ -185,12 +187,13 @@
             <TextView
                 android:id="@+id/txtTemperaturapom"
                 style="@style/txtLexendregular24"
-                android:layout_width="213dp"
+                android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_29pxv"
                 android:layout_marginBottom="@dimen/_11pxv"
                 android:layout_weight="0.62"
-                android:text="@string/msg_temperatura_po" />
+                android:text="@string/msg_temperatura_po"
+                android:textSize="23sp" />
 
             <ImageView
                 android:id="@+id/image38934672"
@@ -198,8 +201,8 @@
                 android:layout_height="@dimen/_105pxh"
                 android:layout_marginStart="@dimen/_45pxh"
                 android:scaleType="fitXY"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/img_38934671" />
+                android:src="@drawable/img_38934671"
+                tools:ignore="ContentDescription" />
         </LinearLayout>
 
         <FrameLayout
@@ -261,8 +264,8 @@
                         android:layout_marginStart="@dimen/_202pxh"
                         android:layout_marginBottom="@dimen/_9pxv"
                         android:scaleType="fitXY"
-                        tools:ignore="ContentDescription"
-                        android:src="@drawable/img_group2275" />
+                        android:src="@drawable/img_group2275"
+                        tools:ignore="ContentDescription" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -413,8 +416,8 @@
                                 android:layout_marginStart="@dimen/_2pxh"
                                 android:layout_marginEnd="@dimen/_1pxh"
                                 android:scaleType="fitXY"
-                                tools:ignore="ContentDescription"
-                                android:src="@drawable/img_group2276" />
+                                android:src="@drawable/img_group2276"
+                                tools:ignore="ContentDescription" />
 
                             <FrameLayout
                                 android:id="@+id/frameStackgroup2278"
@@ -430,8 +433,8 @@
                                     android:layout_height="@dimen/_44pxh"
                                     android:layout_gravity="start"
                                     android:scaleType="fitXY"
-                                    tools:ignore="ContentDescription"
-                                    android:src="@drawable/img_group2278" />
+                                    android:src="@drawable/img_group2278"
+                                    tools:ignore="ContentDescription" />
 
                                 <ImageView
                                     android:id="@+id/imageVectorFiftyTwo"
@@ -443,8 +446,8 @@
                                     android:layout_marginEnd="@dimen/_2pxh"
                                     android:layout_marginBottom="@dimen/_1pxv"
                                     android:scaleType="fitXY"
-                                    tools:ignore="ContentDescription"
-                                    android:src="@drawable/img_vector52" />
+                                    android:src="@drawable/img_vector52"
+                                    tools:ignore="ContentDescription" />
                             </FrameLayout>
                         </FrameLayout>
 
@@ -642,8 +645,8 @@
                             android:layout_marginStart="@dimen/_202pxh"
                             android:layout_marginBottom="@dimen/_9pxv"
                             android:scaleType="fitXY"
-                            tools:ignore="ContentDescription"
-                            android:src="@drawable/img_group2275" />
+                            android:src="@drawable/img_group2275"
+                            tools:ignore="ContentDescription" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -794,8 +797,8 @@
                                     android:layout_marginStart="@dimen/_2pxh"
                                     android:layout_marginEnd="@dimen/_1pxh"
                                     android:scaleType="fitXY"
-                                    tools:ignore="ContentDescription"
-                                    android:src="@drawable/img_group2276_117x259" />
+                                    android:src="@drawable/img_group2276_117x259"
+                                    tools:ignore="ContentDescription" />
 
                                 <FrameLayout
                                     android:id="@+id/frameStackgroup2278One"
@@ -811,8 +814,8 @@
                                         android:layout_height="@dimen/_44pxh"
                                         android:layout_gravity="start"
                                         android:scaleType="fitXY"
-                                        tools:ignore="ContentDescription"
-                                        android:src="@drawable/img_group2278_light_green_a700" />
+                                        android:src="@drawable/img_group2278_light_green_a700"
+                                        tools:ignore="ContentDescription" />
 
                                     <ImageView
                                         android:id="@+id/imageVectorFiftyTwoOne"
@@ -824,8 +827,8 @@
                                         android:layout_marginEnd="@dimen/_2pxh"
                                         android:layout_marginBottom="@dimen/_1pxv"
                                         android:scaleType="fitXY"
-                                        tools:ignore="ContentDescription"
-                                        android:src="@drawable/img_vector52_light_green_a700" />
+                                        android:src="@drawable/img_vector52_light_green_a700"
+                                        tools:ignore="ContentDescription" />
                                 </FrameLayout>
                             </FrameLayout>
 
