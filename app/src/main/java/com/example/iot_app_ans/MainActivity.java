@@ -5,18 +5,34 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
     float x1, x2, y1, y2;
+    TextView txtData;
     Button buttonSettings;
+    Button Statistic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home1);
 
+        txtData = findViewById(R.id.txtData);
+
+        Date currentTime = Calendar.getInstance().getTime();
+        String formattedDate = DateFormat.getDateInstance(DateFormat.FULL).format(currentTime);
+        txtData.setText(formattedDate);
+
+
         buttonSettings = findViewById(R.id. Settings);
+
 
         buttonSettings.setOnClickListener(new View.OnClickListener() {
             @Override

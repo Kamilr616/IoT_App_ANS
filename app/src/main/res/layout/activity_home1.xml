@@ -62,7 +62,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/txtPoniedziaekZero2"
+        android:id="@+id/txtData"
         style="@style/txtLexendsemibold13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -412,6 +412,20 @@
             app:layout_constraintVertical_bias="0.473"
             android:color="#66FF0000"
             android:alpha="0"/>
+
+        <Button
+            android:id="@+id/StatisticButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:color="#66FF0000"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.473" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
