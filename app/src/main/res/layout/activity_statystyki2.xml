@@ -157,14 +157,13 @@
         android:layout_gravity="center_horizontal"
         android:ellipsize="end"
         android:singleLine="true"
-        android:text="@{satatisticsOneVM.satatisticsOneModel.txtStatystyki}"
+        android:text="@string/lbl_statystyki"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.064"
-        tools:text="@string/lbl_statystyki" />
+        app:layout_constraintVertical_bias="0.064" />
 
     <LinearLayout
         android:id="@+id/linearColumnwilgotno"
@@ -198,8 +197,7 @@
                 android:layout_weight="0.73"
                 android:ellipsize="middle"
                 android:singleLine="true"
-                android:text="@{satatisticsTwoVM.satatisticsTwoModel.txtWilgotno}"
-                tools:text="@string/lbl_wilgotno" />
+                android:text="@string/lbl_wilgotno" />
 
             <ImageView
                 android:id="@+id/imageWaterdrop1190"
@@ -208,27 +206,8 @@
                 android:layout_marginStart="@dimen/_22pxh"
                 android:scaleType="fitXY"
                 tools:ignore="ContentDescription"
-                tools:src="@drawable/img_waterdrop1190" />
+                android:src="@drawable/img_waterdrop1190" />
         </LinearLayout>
 
-        <FrameLayout
-            android:id="@+id/frameStackredniatempera"
-            android:layout_width="@dimen/_340pxh"
-            android:layout_height="@dimen/_273pxv"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="@dimen/_11pxh"
-            android:layout_marginTop="@dimen/_50pxv"
-            android:layout_marginEnd="@dimen/_7pxh"
-            android:layout_marginBottom="@dimen/_166pxv">
-
-            <View
-                android:id="@+id/lineVectorFortyNine"
-                android:layout_width="@dimen/_340pxh"
-                android:layout_height="@dimen/_2pxv"
-                android:layout_gravity="top|start"
-                android:layout_marginTop="@dimen/_69pxv"
-                android:layout_marginBottom="@dimen/_69pxv"
-                android:background="@color/gray_201" />
-        </FrameLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

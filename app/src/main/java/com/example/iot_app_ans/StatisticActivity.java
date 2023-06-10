@@ -13,12 +13,14 @@ import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import java.util.ArrayList;
 import java.util.List;
+
+import android.view.MotionEvent;
 import android.widget.Button;
 
 public class StatisticActivity extends AppCompatActivity {
     private LineChart chart;
     Button Settings;
-
+    float x1, x2, y1, y2;
     Button Home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,5 +69,22 @@ public class StatisticActivity extends AppCompatActivity {
         chart.setDescription(description);
 
         chart.invalidate();
+    }
+    public boolean onTouchEvent(MotionEvent touchevent) {
+        switch (touchevent.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                x1 = touchevent.getX();
+                y1 = touchevent.getY();
+                break;
+            case MotionEvent.ACTION_UP:
+                x2 = touchevent.getX();
+                y2 = touchevent.getY();
+                if (x1 > x2) {
+                    Intent i = new Intent(this, StatisticActivity2.class);
+                    startActivity(i);
+                }
+                break;
+        }
+        return false;
     }
 }
