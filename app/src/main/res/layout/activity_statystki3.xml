@@ -202,24 +202,19 @@
                 android:src="@drawable/img_55948741" />
         </LinearLayout>
 
-        <FrameLayout
-            android:id="@+id/frameStackredniatempera"
-            android:layout_width="@dimen/_340pxh"
-            android:layout_height="@dimen/_273pxv"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="@dimen/_10pxh"
-            android:layout_marginTop="@dimen/_41pxv"
-            android:layout_marginEnd="@dimen/_8pxh"
-            android:layout_marginBottom="@dimen/_159pxv">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            tools:context=".MainActivity">
 
-            <View
-                android:id="@+id/lineVectorFortyNine"
-                android:layout_width="@dimen/_340pxh"
-                android:layout_height="@dimen/_2pxv"
-                android:layout_gravity="top|start"
-                android:layout_marginTop="@dimen/_69pxv"
-                android:layout_marginBottom="@dimen/_69pxv"
-                android:background="@color/gray_201" />
-        </FrameLayout>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

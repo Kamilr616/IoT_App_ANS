@@ -1,19 +1,18 @@
 package com.example.iot_app_ans;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.os.Binder;
 import android.os.Bundle;
 import android.graphics.Color;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.Description;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.formatter.ValueFormatter;
 import java.util.ArrayList;
 import java.util.List;
-
 import android.view.MotionEvent;
 import android.widget.Button;
 
@@ -22,6 +21,7 @@ public class StatisticActivity extends AppCompatActivity {
     Button Settings;
     float x1, x2, y1, y2;
     Button Home;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,11 +29,11 @@ public class StatisticActivity extends AppCompatActivity {
         chart = findViewById(R.id.chart);
         createTemperatureChart();
 
-        Settings = (Button)findViewById(R.id. settings3);
+        Settings = (Button) findViewById(R.id.settings3);
 
         Settings.setOnClickListener(view -> openSettigns());
 
-        Home = (Button) findViewById(R.id. home4);
+        Home = (Button) findViewById(R.id.home4);
         Home.setOnClickListener(view -> openHome());
 
     }
@@ -47,26 +47,44 @@ public class StatisticActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
+
     private void createTemperatureChart() {
+        String[] daysOfWeek = {"Pon", "Wto", "Śro", "Czw", "Pią", "Sob", "Nie"};
+        float[] temperatureValues = {17f, 24f, 29f, 27f, 24f,31f, 22f};
+
         List<Entry> entries = new ArrayList<>();
-        entries.add(new Entry(0, 25f)); // Poniedziałek
-        entries.add(new Entry(1, 28f)); // Wtorek
-        entries.add(new Entry(2, 26f)); // Środa
-        entries.add(new Entry(3, 30f)); // Czwartek
-        entries.add(new Entry(4, 29f)); // Piątek
-        entries.add(new Entry(5, 27f)); // Sobota
-        entries.add(new Entry(6, 24f)); // Niedziela
+        for (int i = 0; i < daysOfWeek.length; i++) {
+            entries.add(new Entry(i, temperatureValues[i]));
+        }
 
         LineDataSet dataSet = new LineDataSet(entries, "Temperatura (°C)");
-        dataSet.setColor(Color.BLUE);
+        dataSet.setColor(Color.GREEN);
         dataSet.setValueTextColor(Color.BLACK);
+        dataSet.setValueTextSize(13f); // Zwiększenie rozmiaru czcionki dla wartości
 
         LineData lineData = new LineData(dataSet);
         chart.setData(lineData);
 
         Description description = new Description();
         description.setText("Temperatura w stosunku do dni tygodnia");
+        description.setTextSize(12f); // Zwiększenie rozmiaru czcionki dla opisu
         chart.setDescription(description);
+
+        XAxis xAxis = chart.getXAxis();
+        xAxis.setValueFormatter(new ValueFormatter() {
+            @Override
+            public String getFormattedValue(float value) {
+                int index = (int) value;
+                if (index >= 0 && index < daysOfWeek.length) {
+                    return daysOfWeek[index];
+                }
+                return "";
+            }
+        });
+        xAxis.setTextSize(11f); // Zwiększenie rozmiaru czcionki dla etykiet osi X
+
+        YAxis yAxis = chart.getAxisLeft();
+        yAxis.setTextSize(12f); // Zwiększenie rozmiaru czcionki dla etykiet osi Y
 
         chart.invalidate();
     }
@@ -92,3 +110,4 @@ public class StatisticActivity extends AppCompatActivity {
         return false;
     }
 }
+
