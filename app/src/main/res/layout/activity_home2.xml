@@ -40,14 +40,13 @@
             style="@style/txtLexendregular16"
             android:layout_width="120dp"
             android:layout_height="43dp"
-            android:text="@{homeTwoVM.homeTwoModel.txtLampkaprzybiu}"
+            android:text="@string/msg_lampka_przy_biu"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.457"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.579"
-            tools:text="@string/msg_lampka_przy_biu" />
+            app:layout_constraintVertical_bias="0.579" />
 
         <ImageView
             android:id="@+id/imageLightbulb"
