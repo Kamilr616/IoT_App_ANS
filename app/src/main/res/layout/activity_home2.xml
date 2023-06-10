@@ -76,7 +76,7 @@
         android:singleLine="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtWitajXYZ2"
-        tools:text="@string/msg_poniedzia_ek_0" />
+        android:text="@string/msg_poniedzia_ek_0" />
 
     <TextView
         android:id="@+id/txtWitajXYZ2"
@@ -92,7 +92,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.079"
-        tools:text="@string/lbl_witaj_xyz" />
+        android:text="@string/lbl_witaj_xyz" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="394dp"
@@ -119,7 +119,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.692"
-            tools:text="@string/lbl_home" />
+            android:text="@string/lbl_home" />
 
         <ImageView
             android:id="@+id/imageSettings2"

@@ -6,15 +6,26 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity2 extends AppCompatActivity {
     float x1, x2, y1, y2;
     Button Statistic;
+    TextView txtData;
     Button Settings;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home2);
+        txtData = findViewById(R.id.txtData);
+
+        Date currentTime = Calendar.getInstance().getTime();
+        String formattedDate = DateFormat.getDateInstance(DateFormat.FULL).format(currentTime);
+        txtData.setText(formattedDate);
 
         Statistic = (Button) findViewById(R.id. statisticButton2);
 

@@ -26,7 +26,23 @@ public class StatisticActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_statystki3);
         chart = findViewById(R.id.chart);
         createTemperatureChart();
+        Settings = (Button) findViewById(R.id.settings6);
 
+        Settings.setOnClickListener(view -> openSettigns());
+
+        Home = (Button) findViewById(R.id.home6);
+        Home.setOnClickListener(view -> openHome());
+
+    }
+
+    private void openHome() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    private void openSettigns() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
     }
 
     private void createTemperatureChart() {
