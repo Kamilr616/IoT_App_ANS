@@ -6,16 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-public class SettingsActivity extends AppCompatActivity {
-    Button Statistic;
+public class SettingsActivity_ust_urz extends AppCompatActivity {
     Button Home;
-
-    Button Ustawienia_urzadzenia;
+    Button Statistic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
-
+        setContentView(R.layout.activity_settings_ust_urz);
         Statistic = (Button)findViewById(R.id.statisticButton_urz);
 
         Statistic.setOnClickListener(view -> openStatistic());
@@ -24,16 +21,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         Home.setOnClickListener(view -> openHome());
 
-        Ustawienia_urzadzenia = (Button)findViewById(R.id. ust_urz);
 
-        Ustawienia_urzadzenia.setOnClickListener(view -> openUst_urz());
-
-
-    }
-
-    private void openUst_urz() {
-        Intent intent = new Intent(this, SettingsActivity_ust_urz.class);
-        startActivity(intent);
     }
 
     private void openHome() {
@@ -45,5 +33,4 @@ public class SettingsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, StatisticActivity.class);
         startActivity(intent);
     }
-
 }

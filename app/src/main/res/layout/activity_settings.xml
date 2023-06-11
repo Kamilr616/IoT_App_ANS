@@ -236,7 +236,7 @@
             tools:ignore="ContentDescription" />
 
         <Button
-            android:id="@+id/Home"
+            android:id="@+id/Home_urz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="52dp"
@@ -244,12 +244,12 @@
             android:color="#66FF0000"
             android:text="Button"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/statisticButton3"
+            app:layout_constraintEnd_toStartOf="@+id/statisticButton_urz"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/statisticButton3"
+            android:id="@+id/statisticButton_urz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:alpha="0"
