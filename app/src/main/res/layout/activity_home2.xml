@@ -79,18 +79,19 @@
     <TextView
         android:id="@+id/txtWitajXYZ2"
         style="@style/txtLexendsemibold32"
-        android:layout_width="294dp"
-        android:layout_height="45dp"
+        android:layout_width="368dp"
+        android:layout_height="65dp"
         android:layout_gravity="start"
         android:ellipsize="end"
         android:singleLine="true"
+        android:text="@string/lbl_ans"
+        android:textSize="@dimen/_42pxh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintHorizontal_bias="0.744"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079"
-        android:text="@string/lbl_witaj_xyz" />
+        app:layout_constraintVertical_bias="0.07" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="394dp"

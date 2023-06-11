@@ -24,6 +24,7 @@
             style="@style/txtLexendregular20"
             android:layout_width="174dp"
             android:layout_height="58dp"
+            android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.157"
@@ -112,6 +113,7 @@
             android:layout_width="117dp"
             android:layout_height="48dp"
             android:text="@string/lbl_wilgotno"
+            android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.578"
@@ -174,7 +176,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"/>
 
         <TextView
             android:id="@+id/txt75C2"
@@ -192,25 +195,24 @@
             app:layout_constraintVertical_bias="0.888" />
 
         <ImageView
-            android:id="@+id/imageWaterdrop2"
-            android:layout_width="@dimen/_49pxh"
-            android:layout_height="@dimen/_49pxh"
-            android:layout_gravity="start"
+            android:id="@+id/image2"
+            android:layout_width="54dp"
+            android:layout_height="50dp"
             android:scaleType="fitXY"
-            android:src="@drawable/img_waterdrop1190"
+            android:src="@drawable/img_55948741"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.049"
+            app:layout_constraintVertical_bias="0.04"
             tools:ignore="ContentDescription" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/SilaSygnalu"
         style="@style/groupStylegray_200cornerRadius"
-        android:layout_width="347dp"
-        android:layout_height="140dp"
+        android:layout_width="339dp"
+        android:layout_height="141dp"
         android:baselineAligned="false"
         android:gravity="start"
         android:orientation="horizontal"
@@ -223,19 +225,19 @@
         <TextView
             android:id="@+id/txt40dbm2"
             style="@style/txtLexendbold36_1"
-            android:layout_width="145dp"
-            android:layout_height="54dp"
+            android:layout_width="170dp"
+            android:layout_height="57dp"
             android:ellipsize="end"
             android:singleLine="true"
             android:text="@string/lbl_40dbm"
             android:textColor="#9D39EB"
-            android:textSize="31dp"
+            android:textSize="@dimen/_40pxh"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintHorizontal_bias="0.142"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.737" />
+            app:layout_constraintVertical_bias="0.809" />
 
         <ImageView
             android:id="@+id/image3"
@@ -254,10 +256,10 @@
         <TextView
             android:id="@+id/txtTemperaturaurz4"
             style="@style/txtLexendregular16"
-            android:textSize="@dimen/_20pxh"
             android:layout_width="171dp"
             android:layout_height="44dp"
             android:text="@string/msg_si_a_sygna_u_w"
+            android:textSize="@dimen/_20pxh"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.142"

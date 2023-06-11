@@ -6,15 +6,16 @@
         <item name="android:fontFamily">@font/inter</item>
         <item name="android:textFontWeight" tools:targetApi="p">400</item>
     </style>
-    <style name="LargeSwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch">
-        <item name="android:width">100dp</item>
-        <item name="android:height">100dp</item>
-    </style>
     <style name="txtLexendbold36_2">
         <item name="android:textSize">@dimen/_36pxh</item>
         <item name="android:textColor">@color/orange_A200</item>
         <item name="android:fontFamily">@font/lexend</item>
         <item name="android:textFontWeight" tools:targetApi="p">700</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black_900</item>
+        <item name="colorAccent">@color/red_400</item>
     </style>
     <style name="txtLexendbold36_1">
         <item name="android:textSize">@dimen/_30pxh</item>
