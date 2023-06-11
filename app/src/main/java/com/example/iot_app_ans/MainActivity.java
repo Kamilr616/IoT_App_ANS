@@ -2,17 +2,14 @@ package com.example.iot_app_ans;
 
 import android.os.Bundle;
 import android.view.MotionEvent;
-import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Locale;
+
 
 public class MainActivity extends AppCompatActivity {
     float x1, x2, y1, y2;
@@ -33,19 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         buttonSettings = findViewById(R.id. Settings);
         Statistic = (Button) findViewById(R.id.StatisticButton);
-        Statistic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openStatistic();
-            }
-        });
-
-        buttonSettings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NewActivity();
-            }
-        });
+        Statistic.setOnClickListener(view -> openStatistic());
+        buttonSettings.setOnClickListener(view -> NewActivity());
 
     }
 
@@ -71,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
-//MARCIN
     private void NewActivity() {
         setContentView(R.layout.activity_settings);
     }

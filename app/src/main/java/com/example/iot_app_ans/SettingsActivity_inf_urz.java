@@ -7,13 +7,13 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.widget.Button;
 
-public class SettingsActivity_ust_urz extends AppCompatActivity {
+public class SettingsActivity_inf_urz extends AppCompatActivity {
     Button Home,Statistic;
     float x1, x2, y1, y2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings_ust_urz);
+        setContentView(R.layout.activity_settings_inf_urz);
 
         Statistic = (Button)findViewById(R.id.statisticButton_urz);
 
