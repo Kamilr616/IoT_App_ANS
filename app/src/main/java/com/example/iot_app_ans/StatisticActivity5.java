@@ -47,7 +47,7 @@ public class StatisticActivity5 extends AppCompatActivity {
 
     private void createTemperatureChart() {
         String[] daysOfWeek = {"Pon", "Wto", "Śro", "Czw", "Pią", "Sob", "Nie"};
-        float[] temperatureValues = {1f, 20f, 5f, 35f, 2f, 45f, 4f};
+        float[] temperatureValues = {82f, 69f, 65f, 42f, 58f, 36f, 79f};
 
         List<Entry> entries = new ArrayList<>();
         for (int i = 0; i < daysOfWeek.length; i++) {
