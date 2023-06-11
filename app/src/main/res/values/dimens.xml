@@ -2872,4 +2872,5 @@
     <dimen name="_882sp">882.0sp</dimen>
     <dimen name="_883sp">883.0sp</dimen>
     <dimen name="_884sp">884.0sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

@@ -4,30 +4,61 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 public class SettingsActivity extends AppCompatActivity {
-    Button buttonStatistic ;
+    Button Ustawienia_urzadzenia,Home,Statistic,informacje_urzadzenia,informacje_aplikacji,authors;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        buttonStatistic = findViewById(R.id. Statistic1);
+        Statistic = (Button)findViewById(R.id.statisticButton_urz);
+        Statistic.setOnClickListener(view -> openStatistic());
 
-        buttonStatistic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NewActivity();
-            }
-        });
+        Home = (Button)findViewById(R.id.Home);
+        Home.setOnClickListener(view -> openHome());
 
+        Ustawienia_urzadzenia = (Button)findViewById(R.id. ust_urz);
+        Ustawienia_urzadzenia.setOnClickListener(view -> openUst_urz());
+
+        informacje_urzadzenia =(Button)findViewById(R.id. inf_urz);
+        informacje_urzadzenia.setOnClickListener(view -> open_inf_urz());
+
+        informacje_aplikacji =(Button)findViewById(R.id. inf_apl);
+        informacje_aplikacji.setOnClickListener(view -> open_inf_app());
+
+        authors = (Button)findViewById(R.id. autorzy);
+        authors.setOnClickListener(view -> open_aut());
 
     }
 
-    private void NewActivity() {
+    private void open_aut() {
+        Intent intent = new Intent(this, SettingsActivity_aut.class);
+        startActivity(intent);
+    }
+
+    private void openUst_urz() {
+        Intent intent = new Intent(this, SettingsActivity_ust_urz.class);
+        startActivity(intent);
+    }
+
+    private void openHome() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    private void openStatistic() {
         Intent intent = new Intent(this, StatisticActivity.class);
+        startActivity(intent);
+    }
+
+    private void open_inf_urz() {
+        Intent intent = new Intent(this, SettingsActivity_inf_urz.class);
+        startActivity(intent);
+    }
+    private void open_inf_app() {
+        Intent intent = new Intent(this, SettingsActivity_inf_app.class);
         startActivity(intent);
     }
 }

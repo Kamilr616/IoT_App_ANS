@@ -40,14 +40,13 @@
             style="@style/txtLexendregular16"
             android:layout_width="120dp"
             android:layout_height="43dp"
-            android:text="@{homeTwoVM.homeTwoModel.txtLampkaprzybiu}"
+            android:text="@string/msg_lampka_przy_biu"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.457"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.579"
-            tools:text="@string/msg_lampka_przy_biu" />
+            app:layout_constraintVertical_bias="0.579" />
 
         <ImageView
             android:id="@+id/imageLightbulb"
@@ -66,7 +65,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/txtPoniedziaekZero2"
+        android:id="@+id/txtData"
         style="@style/txtLexendsemibold13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,7 +76,7 @@
         android:singleLine="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtWitajXYZ2"
-        tools:text="@string/msg_poniedzia_ek_0" />
+        android:text="@string/msg_poniedzia_ek_0" />
 
     <TextView
         android:id="@+id/txtWitajXYZ2"
@@ -93,7 +92,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.079"
-        tools:text="@string/lbl_witaj_xyz" />
+        android:text="@string/lbl_witaj_xyz" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="394dp"
@@ -120,7 +119,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.692"
-            tools:text="@string/lbl_home" />
+            android:text="@string/lbl_home" />
 
         <ImageView
             android:id="@+id/imageSettings2"
@@ -165,6 +164,34 @@
             app:layout_constraintVertical_bias="0.326"
             tools:ignore="ContentDescription"
             tools:src="@drawable/img_home" />
+
+        <Button
+            android:id="@+id/statisticButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:color="#66FF0000"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.473" />
+
+        <Button
+            android:id="@+id/settings2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:color="#66FF0000"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.758"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.473" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

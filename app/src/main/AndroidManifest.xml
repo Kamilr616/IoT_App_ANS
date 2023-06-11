@@ -13,6 +13,53 @@
         android:theme="@style/Theme.IoT_App_ANS"
         tools:targetApi="31">
         <activity
+            android:name=".SettingsActivity_inf_app"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity_aut"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity_inf_urz"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity_ust_urz"
+            android:exported="false" />
+        <activity
+            android:name=".StatisticActivity5"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StatisticActivity4"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StatisticActivity3"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StatisticActivity2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".StatisticActivity"
             android:exported="false">
             <meta-data
@@ -28,8 +75,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

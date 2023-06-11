@@ -15,25 +15,22 @@ import java.util.ArrayList;
 import java.util.List;
 import android.view.MotionEvent;
 import android.widget.Button;
-
-public class StatisticActivity extends AppCompatActivity {
+public class StatisticActivity4 extends AppCompatActivity {
     private LineChart chart;
     Button Settings;
     float x1, x2, y1, y2;
     Button Home;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_statystki1);
+        setContentView(R.layout.activity_statystyki4);
         chart = findViewById(R.id.chart);
         createTemperatureChart();
-
-        Settings = (Button) findViewById(R.id.settings3);
+        Settings = (Button) findViewById(R.id.settings7);
 
         Settings.setOnClickListener(view -> openSettigns());
 
-        Home = (Button) findViewById(R.id.home4);
+        Home = (Button) findViewById(R.id.home7);
         Home.setOnClickListener(view -> openHome());
 
     }
@@ -50,15 +47,15 @@ public class StatisticActivity extends AppCompatActivity {
 
     private void createTemperatureChart() {
         String[] daysOfWeek = {"Pon", "Wto", "Śro", "Czw", "Pią", "Sob", "Nie"};
-        float[] temperatureValues = {17f, 24f, 29f, 27f, 24f,31f, 22f};
+        float[] temperatureValues = {1f, 20f, 5f, 35f, 2f, 45f, 4f};
 
         List<Entry> entries = new ArrayList<>();
         for (int i = 0; i < daysOfWeek.length; i++) {
             entries.add(new Entry(i, temperatureValues[i]));
         }
 
-        LineDataSet dataSet = new LineDataSet(entries, "Temperatura (°C)");
-        dataSet.setColor(Color.GREEN);
+        LineDataSet dataSet = new LineDataSet(entries, "Natężenie pola");
+        dataSet.setColor(Color.parseColor("#EBA439"));
         dataSet.setValueTextColor(Color.BLACK);
         dataSet.setValueTextSize(13f); // Zwiększenie rozmiaru czcionki dla wartości
 
@@ -66,7 +63,7 @@ public class StatisticActivity extends AppCompatActivity {
         chart.setData(lineData);
 
         Description description = new Description();
-        description.setText("Temperatura w stosunku do dni tygodnia");
+        description.setText("Natężenie pola w stosunku do dni tygodnia");
         description.setTextSize(12f); // Zwiększenie rozmiaru czcionki dla opisu
         chart.setDescription(description);
 
@@ -88,6 +85,7 @@ public class StatisticActivity extends AppCompatActivity {
 
         chart.invalidate();
     }
+
     public boolean onTouchEvent(MotionEvent touchevent) {
         switch (touchevent.getAction()) {
             case MotionEvent.ACTION_DOWN:
@@ -98,11 +96,11 @@ public class StatisticActivity extends AppCompatActivity {
                 x2 = touchevent.getX();
                 y2 = touchevent.getY();
                 if (x1 > x2) {
-                    Intent i = new Intent(this, StatisticActivity2.class);
+                    Intent i = new Intent(this, StatisticActivity5.class);
                     startActivity(i);
                 }
-                else if (x1 < x2) {
-                    Intent i = new Intent(this, StatisticActivity5.class);
+                else if(x1 < x2){
+                    Intent i = new Intent(this, StatisticActivity3.class);
                     startActivity(i);
                 }
                 break;
@@ -110,4 +108,3 @@ public class StatisticActivity extends AppCompatActivity {
         return false;
     }
 }
-
