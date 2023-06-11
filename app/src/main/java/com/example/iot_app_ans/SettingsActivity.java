@@ -16,7 +16,7 @@ public class SettingsActivity extends AppCompatActivity {
         Statistic = (Button)findViewById(R.id.statisticButton_urz);
         Statistic.setOnClickListener(view -> openStatistic());
 
-        Home = (Button)findViewById(R.id.Home_urz);
+        Home = (Button)findViewById(R.id.Home);
         Home.setOnClickListener(view -> openHome());
 
         Ustawienia_urzadzenia = (Button)findViewById(R.id. ust_urz);
@@ -28,6 +28,14 @@ public class SettingsActivity extends AppCompatActivity {
         informacje_aplikacji =(Button)findViewById(R.id. inf_apl);
         informacje_aplikacji.setOnClickListener(view -> open_inf_app());
 
+        authors = (Button)findViewById(R.id. autorzy);
+        authors.setOnClickListener(view -> open_aut());
+
+    }
+
+    private void open_aut() {
+        Intent intent = new Intent(this, SettingsActivity_aut.class);
+        startActivity(intent);
     }
 
     private void openUst_urz() {

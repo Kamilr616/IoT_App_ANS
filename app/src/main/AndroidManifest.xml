@@ -16,6 +16,9 @@
             android:name=".SettingsActivity_inf_app"
             android:exported="false" />
         <activity
+            android:name=".SettingsActivity_aut"
+            android:exported="false" />
+        <activity
             android:name=".SettingsActivity_inf_urz"
             android:exported="false" />
         <activity

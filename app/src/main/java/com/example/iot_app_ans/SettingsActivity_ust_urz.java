@@ -19,7 +19,7 @@ public class SettingsActivity_ust_urz extends AppCompatActivity {
 
         Statistic.setOnClickListener(view -> openStatistic());
 
-        Home = (Button)findViewById(R.id.Home_urz);
+        Home = (Button)findViewById(R.id.Home);
 
         Home.setOnClickListener(view -> openHome());
 
