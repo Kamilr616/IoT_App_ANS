@@ -13,6 +13,9 @@
         android:theme="@style/Theme.IoT_App_ANS"
         tools:targetApi="31">
         <activity
+            android:name=".SettingsActivity_inf_app"
+            android:exported="false" />
+        <activity
             android:name=".SettingsActivity_inf_urz"
             android:exported="false" />
         <activity
@@ -69,8 +72,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

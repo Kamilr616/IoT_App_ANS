@@ -25,6 +25,9 @@ public class SettingsActivity extends AppCompatActivity {
         informacje_urzadzenia =(Button)findViewById(R.id. inf_urz);
         informacje_urzadzenia.setOnClickListener(view -> open_inf_urz());
 
+        informacje_aplikacji =(Button)findViewById(R.id. inf_apl);
+        informacje_aplikacji.setOnClickListener(view -> open_inf_app());
+
     }
 
     private void openUst_urz() {
@@ -44,6 +47,10 @@ public class SettingsActivity extends AppCompatActivity {
 
     private void open_inf_urz() {
         Intent intent = new Intent(this, SettingsActivity_inf_urz.class);
+        startActivity(intent);
+    }
+    private void open_inf_app() {
+        Intent intent = new Intent(this, SettingsActivity_inf_app.class);
         startActivity(intent);
     }
 }
