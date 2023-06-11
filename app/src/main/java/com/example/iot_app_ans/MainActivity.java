@@ -11,7 +11,10 @@ import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import com.google.gson.JsonObject;
-import org.json.JSONObject;
+import android.widget.ProgressBar;
+import android.os.Handler;
+import android.view.View;
+
 
 
 
@@ -71,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, StatisticActivity.class);
         startActivity(intent);
     }
-
     public boolean onTouchEvent(MotionEvent touchevent) {
         switch (touchevent.getAction()) {
             case MotionEvent.ACTION_DOWN:
@@ -82,13 +84,32 @@ public class MainActivity extends AppCompatActivity {
                 x2 = touchevent.getX();
                 y2 = touchevent.getY();
                 float deltaY = y2 - y1;
-                if (deltaY < 0 && Math.abs(deltaY) > 100) {
-                    // Swipe w górę - odświeżanie danych
-                    refreshData();
+                if (deltaY > 0 && Math.abs(deltaY) > 100) {
+                    // Swipe z góry na dół - odświeżanie danych
+                    showProgressBar(); // Pokazuje ProgressBar
+                    refreshData(); // Odświeża dane
+                } else if (x1 > x2) {
+                    // Swipe w lewo
+                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                    startActivity(intent);
                 }
                 break;
         }
         return false;
+    }
+
+    private void showProgressBar() {
+        ProgressBar progressBar = findViewById(R.id.progressBar);
+        progressBar.setVisibility(View.VISIBLE);
+
+        // Ukryj ProgressBar po 5 sekundach
+        Handler handler = new Handler();
+        handler.postDelayed(() -> hideProgressBar(), 4000); // 4000 milisekund = 5 sekund
+    }
+
+    private void hideProgressBar() {
+        ProgressBar progressBar = findViewById(R.id.progressBar);
+        progressBar.setVisibility(View.GONE);
     }
 
     private void refreshData() {
