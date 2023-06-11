@@ -99,7 +99,7 @@ public class StatisticActivity5 extends AppCompatActivity {
                     startActivity(i);
                 }
                 else if(x1 < x2) {
-                    Intent i = new Intent(this, StatisticActivity4.class);
+                    Intent i = new Intent(this, StatisticActivity3.class);
                     startActivity(i);
                 }
                 break;

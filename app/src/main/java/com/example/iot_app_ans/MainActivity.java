@@ -15,9 +15,6 @@ import android.widget.ProgressBar;
 import android.os.Handler;
 import android.view.View;
 
-
-
-
 public class MainActivity extends AppCompatActivity {
 
     float x1, x2, y1, y2;

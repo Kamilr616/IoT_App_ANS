@@ -96,7 +96,7 @@ public class StatisticActivity3 extends AppCompatActivity {
                 x2 = touchevent.getX();
                 y2 = touchevent.getY();
                 if (x1 > x2) {
-                    Intent i = new Intent(this, StatisticActivity4.class);
+                    Intent i = new Intent(this, StatisticActivity5.class);
                     startActivity(i);
                 }
                 else if(x1 < x2){

@@ -22,7 +22,7 @@
             android:background="@drawable/rectangle_bg_bluegray_100_90_radius_5_5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintHorizontal_bias="0.657"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.571" />
@@ -46,21 +46,10 @@
             android:background="@drawable/rectangle_bg_gray_501_radius_5_5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.364"
+            app:layout_constraintHorizontal_bias="0.413"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.571" />
-
-        <View
-            android:id="@+id/viewEllipseTwo3"
-            android:layout_width="@dimen/_11pxh"
-            android:layout_height="@dimen/_11pxh"
-            android:background="@drawable/rectangle_bg_bluegray_100_90_radius_5_5"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.733"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <View
             android:id="@+id/viewEllipseTwo4"
@@ -202,37 +191,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearRowwilgotno"
             android:layout_width="335dp"
-            android:layout_height="wrap_content"
+            android:layout_height="94dp"
             android:layout_marginStart="@dimen/_11pxh"
             android:layout_marginTop="@dimen/_24pxv"
             android:layout_marginEnd="@dimen/_11pxh"
-            android:gravity="start"
-            android:orientation="horizontal">
+            android:gravity="start">
 
             <TextView
-                android:id="@+id/txtWilgotno"
-                style="@style/txtLexendregular36"
-                android:layout_width="209dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_22pxv"
-                android:layout_marginBottom="@dimen/_6pxv"
-                android:layout_weight="0.73"
-                android:ellipsize="middle"
-                android:singleLine="true"
-                android:text="@string/lbl_wilgotno" />
+                android:id="@+id/txtTemperaturaurz5"
+                android:layout_width="214dp"
+                android:layout_height="91dp"
+                android:fontFamily="@font/lexend"
+                android:text="@string/msg_temperatura_wz"
+                android:textAlignment="center"
+                android:textColor="@color/black_900"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_32pxh"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.132"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.666" />
 
             <ImageView
                 android:id="@+id/imageWaterdrop1190"
-                android:layout_width="@dimen/_74pxh"
-                android:layout_height="@dimen/_74pxh"
-                android:layout_marginStart="@dimen/_22pxh"
+                android:layout_width="80dp"
+                android:layout_height="73dp"
                 android:scaleType="fitXY"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/img_waterdrop1190" />
-        </LinearLayout>
+                android:src="@drawable/img_waterdrop1190"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtTemperaturaurz5"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"

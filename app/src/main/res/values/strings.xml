@@ -52,8 +52,8 @@ pomieszczenia</string>
     <string name="lbl_nat_rzenie_pola">Natęrzenie pola</string>
     <string name="lbl_wto">Wto</string>
     <string name="lbl_402">40</string>
-    <string name="msg_temperatura_ur">Temperatura
-urządzenia</string>
+    <string name="msg_temperatura_bz">Wilgotność bezwględna</string>
+    <string name="msg_temperatura_wz">Wilgotność wględna</string>
     <string name="lbl_602">-60</string>
     <string name="msg_temperatura_urz">Wilgotność bezwzględna</string>
     <string name="msg_informacje_o_ur">Informacje o urządzeniu</string>
