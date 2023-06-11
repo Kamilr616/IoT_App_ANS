@@ -53,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
         // Wywołanie żądania GET dla czujnika wilgotności
         Call<JsonObject> humidityCall = esp32Service.getHumidityData();
         humidityCall.enqueue(new SensorDataResponseHandler(MainActivity.this, R.id.txtThirtySix2));
+
+        // Wywołanie żądania GET dla czujnika WIFI
+        Call<JsonObject> wifi = esp32Service.getWIFIData();
+        wifi.enqueue(new SensorDataResponseHandler(MainActivity.this, R.id.txt40dbm2));
+
+        // Wywołanie żądania GET dla czujnika WIFI
+        Call<JsonObject> HumidityAbsolut = esp32Service.getHumidityAbsolutData();
+        HumidityAbsolut.enqueue(new SensorDataResponseHandler(MainActivity.this, R.id.txt75C2));
     }
 
     public static Context getAppContext() {
@@ -91,6 +99,14 @@ public class MainActivity extends AppCompatActivity {
         // Wywołanie żądania GET dla czujnika wilgotności
         Call<JsonObject> humidityCall = esp32Service.getHumidityData();
         humidityCall.enqueue(new SensorDataResponseHandler(MainActivity.this, R.id.txtThirtySix2));
+
+        // Wywołanie żądania GET dla czujnika WIFI
+        Call<JsonObject> wifi = esp32Service.getWIFIData();
+        wifi.enqueue(new SensorDataResponseHandler(MainActivity.this, R.id.txt40dbm2));
+
+        // Wywołanie żądania GET dla czujnika WIFI
+        Call<JsonObject> HumidityAbsolut = esp32Service.getHumidityAbsolutData();
+        HumidityAbsolut.enqueue(new SensorDataResponseHandler(MainActivity.this, R.id.txt75C2));
     }
 
     private void openSettings() {

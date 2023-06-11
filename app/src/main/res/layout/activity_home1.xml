@@ -106,20 +106,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.48">
 
+        <TextView
+            android:id="@+id/txtTemperaturaurz3"
+            style="@style/txtLexendregular16"
+            android:layout_width="117dp"
+            android:layout_height="48dp"
+            android:text="@string/lbl_wilgotno"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/imageWaterdrop"
             android:layout_width="@dimen/_49pxh"
             android:layout_height="@dimen/_49pxh"
             android:layout_gravity="start"
             android:scaleType="fitXY"
+            android:src="@drawable/img_waterdrop1190"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.149"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.068"
-            tools:ignore="ContentDescription"
-            android:src="@drawable/img_waterdrop1190" />
+            app:layout_constraintVertical_bias="0.019"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/txtThirtySix2"
@@ -129,28 +140,14 @@
             android:layout_gravity="start"
             android:ellipsize="end"
             android:singleLine="true"
+            android:text="@string/lbl_36"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.205"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.877"
-            android:text="@string/lbl_36" />
+            app:layout_constraintVertical_bias="0.933" />
 
-        <TextView
-            android:id="@+id/txtWilgotno2"
-            style="@style/txtLexendregular16"
-            android:layout_width="102dp"
-            android:layout_height="21dp"
-            android:ellipsize="end"
-            android:gravity="start"
-            android:singleLine="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.296"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/lbl_wilgotno" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -168,166 +165,105 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.48">
 
-        <ImageView
-            android:id="@+id/image2"
-            android:layout_width="@dimen/_44pxh"
-            android:layout_height="@dimen/_44pxh"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.142"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.093"
-            tools:ignore="ContentDescription"
-            android:src="@drawable/img_55948741" />
-
         <TextView
             android:id="@+id/txtTemperaturaurz2"
             style="@style/txtLexendregular16"
             android:layout_width="105dp"
             android:layout_height="42dp"
+            android:text="@string/msg_temperatura_urz"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.313"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.495"
-            android:text="@string/msg_temperatura_urz" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/txt75C2"
             style="@style/txtLexendbold36_1"
-            android:layout_width="83dp"
+            android:layout_width="130dp"
             android:layout_height="42dp"
             android:ellipsize="end"
             android:singleLine="true"
+            android:text="@string/lbl_75_c"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintHorizontal_bias="0.64"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.88"
-            android:text="@string/lbl_75_c" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/NaterzeniePola"
-        style="@style/groupStylegray_200cornerRadius"
-        android:layout_width="@dimen/_155pxh"
-        android:layout_height="@dimen/_150pxh"
-        android:baselineAligned="false"
-        android:gravity="start"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762">
-
-        <TextView
-            android:id="@+id/txtNatPolaMag"
-            style="@style/txtLexendregular16"
-            android:layout_width="136dp"
-            android:layout_height="41dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.8"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/msg_nat_rzenie_pola2" />
-
-        <TextView
-            android:id="@+id/txtThirtySix3"
-            style="@style/txtLexendbold36"
-            android:layout_width="47dp"
-            android:layout_height="60dp"
-            android:layout_gravity="start"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:textColor="#EBA439"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.146"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            android:text="@string/lbl_23" />
+            app:layout_constraintVertical_bias="0.888" />
 
         <ImageView
-            android:id="@+id/NS"
+            android:id="@+id/imageWaterdrop2"
             android:layout_width="@dimen/_49pxh"
             android:layout_height="@dimen/_49pxh"
-            android:layout_gravity="start" android:scaleType="fitXY"
+            android:layout_gravity="start"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_waterdrop1190"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.149"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.058"
-            tools:ignore="ContentDescription"
-            android:src="@drawable/img_32019951" />
-
+            app:layout_constraintVertical_bias="0.049"
+            tools:ignore="ContentDescription" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/SilaSygnalu"
         style="@style/groupStylegray_200cornerRadius"
-        android:layout_width="@dimen/_155pxh"
-        android:layout_height="@dimen/_150pxh"
+        android:layout_width="347dp"
+        android:layout_height="140dp"
         android:baselineAligned="false"
         android:gravity="start"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761">
+        app:layout_constraintVertical_bias="0.752">
 
         <TextView
             android:id="@+id/txt40dbm2"
             style="@style/txtLexendbold36_1"
-            android:layout_width="137dp"
-            android:layout_height="wrap_content"
+            android:layout_width="145dp"
+            android:layout_height="54dp"
             android:ellipsize="end"
             android:singleLine="true"
+            android:text="@string/lbl_40dbm"
             android:textColor="#9D39EB"
             android:textSize="31dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintHorizontal_bias="0.115"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.849"
-            android:text="@string/lbl_40dbm" />
+            app:layout_constraintVertical_bias="0.737" />
 
         <ImageView
             android:id="@+id/image3"
-            android:layout_width="@dimen/_44pxh"
-            android:layout_height="@dimen/_44pxh"
+            android:layout_width="110dp"
+            android:layout_height="96dp"
             android:scaleType="fitXY"
+            android:src="@drawable/img_wifianalyzer1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.886"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.431"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/txtTemperaturaurz4"
+            style="@style/txtLexendregular16"
+            android:textSize="@dimen/_20pxh"
+            android:layout_width="171dp"
+            android:layout_height="44dp"
+            android:text="@string/msg_si_a_sygna_u_w"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.142"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.149"
-            tools:ignore="ContentDescription"
-            android:src="@drawable/img_wifianalyzer1" />
-
-        <TextView
-            android:id="@+id/txtTemperaturaurz4"
-            style="@style/txtLexendregular16"
-            android:layout_width="136dp"
-            android:layout_height="23dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.523"
-            android:text="@string/msg_si_a_sygna_u_w" />
+            app:layout_constraintVertical_bias="0.201" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

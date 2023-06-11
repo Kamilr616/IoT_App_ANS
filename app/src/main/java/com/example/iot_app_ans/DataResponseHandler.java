@@ -24,7 +24,7 @@ public class DataResponseHandler implements Callback<JsonObject> {
             if (jsonObject != null) {
                 String stateValue = jsonObject.get("state").getAsString();
                 String unitOfMeasurement = jsonObject.get("attributes").getAsJsonObject().get("unit_of_measurement").getAsString();
-                String message = stateValue + " " + unitOfMeasurement;
+                String message = stateValue + "" + unitOfMeasurement;
 
                 // Aktualizacja TextView
                 TextView textView = ((MainActivity) MainActivity.getAppContext()).findViewById(textViewId);

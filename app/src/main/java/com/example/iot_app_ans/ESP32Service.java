@@ -11,9 +11,12 @@ public interface ESP32Service {
     @GET("/api/states/sensor.iot_esp_ans_wilgotnosc_1")
     Call<JsonObject> getHumidityData();
 
-    // Dodaj inne metody dla innych czujników
+    @GET("/api/states/sensor.iot_esp_ans_wifi_signal_1")
+    Call<JsonObject> getWIFIData();
 
-    // ...
+    @GET("/api/states/sensor.iot_esp_ans_wilgotnosc_bezwzgledna_1")
+    Call<JsonObject> getHumidityAbsolutData();
+
 }
 
 

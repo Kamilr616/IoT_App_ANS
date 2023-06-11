@@ -36,7 +36,7 @@ magentycznego</string>
     <string name="msg_temperatura_po">Temperatura
 pomieszczenia</string>
     <string name="lbl">℃</string>
-    <string name="lbl_wilgotno">Wilgotność</string>
+    <string name="lbl_wilgotno">Wilgotność względna</string>
     <string name="lbl_pon">Pon</string>
     <string name="lbl_j_zyk">Język</string>
     <string name="lbl_pi">Pią</string>
@@ -55,8 +55,7 @@ pomieszczenia</string>
     <string name="msg_temperatura_ur">Temperatura
 urządzenia</string>
     <string name="lbl_602">-60</string>
-    <string name="msg_temperatura_urz">Temperatura
-urządzenia</string>
+    <string name="msg_temperatura_urz">Wilgotność bezwzględna</string>
     <string name="msg_informacje_o_ur">Informacje o urządzeniu</string>
     <string name="lbl_si_a_sygna_u">Siła sygnału</string>
     <string name="lbl_dbm">dBm</string>
