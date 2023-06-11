@@ -28,4 +28,7 @@
     <color name="black_900_19">#19000000</color>
     <color name="white_A700">#ffffff</color>
     <color name="blue_wil">#62AFCD</color>
+    <color name="colorEnabled">#4dd31d</color>
+    <color name="colorDisabled">#eb3958</color>
+
 </resources>

@@ -15,25 +15,10 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236">
-
-        <ImageView
-            android:id="@+id/imageVector"
-            android:layout_width="@dimen/_55pxh"
-            android:layout_height="@dimen/_37pxh"
-            android:scaleType="fitXY"
-            android:src="@drawable/img_vector"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.16"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.929"
-            tools:ignore="ContentDescription"
-            tools:src="@drawable/img_vector" />
+        app:layout_constraintVertical_bias="0.278">
 
         <TextView
             android:id="@+id/txtLampkaprzybiu"
@@ -41,12 +26,13 @@
             android:layout_width="120dp"
             android:layout_height="43dp"
             android:text="@string/msg_lampka_przy_biu"
+            android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.457"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.579" />
+            app:layout_constraintVertical_bias="0.504" />
 
         <ImageView
             android:id="@+id/imageLightbulb"
@@ -56,12 +42,24 @@
             android:src="@drawable/img_lightbulb"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.153"
+            app:layout_constraintVertical_bias="0.048"
             tools:ignore="ContentDescription"
             tools:src="@drawable/img_lightbulb" />
+
+        <Button
+            android:id="@+id/relaybutton"
+            android:layout_width="115dp"
+            android:layout_height="37dp"
+            android:text="ON / OFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLampkaprzybiu" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -81,18 +79,19 @@
     <TextView
         android:id="@+id/txtWitajXYZ2"
         style="@style/txtLexendsemibold32"
-        android:layout_width="294dp"
-        android:layout_height="45dp"
+        android:layout_width="368dp"
+        android:layout_height="65dp"
         android:layout_gravity="start"
         android:ellipsize="end"
         android:singleLine="true"
+        android:text="@string/lbl_ans"
+        android:textSize="@dimen/_42pxh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintHorizontal_bias="0.744"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079"
-        android:text="@string/lbl_witaj_xyz" />
+        app:layout_constraintVertical_bias="0.07" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="394dp"

@@ -22,7 +22,7 @@
             android:background="@drawable/rectangle_bg_bluegray_100_90_radius_5_5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.548"
+            app:layout_constraintHorizontal_bias="0.614"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.571" />
@@ -34,19 +34,7 @@
             android:background="@drawable/rectangle_bg_bluegray_100_90_radius_5_5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.353"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.571" />
-
-        <View
-            android:id="@+id/viewEllipseTwo3"
-            android:layout_width="@dimen/_11pxh"
-            android:layout_height="@dimen/_11pxh"
-            android:background="@drawable/rectangle_bg_bluegray_100_90_radius_5_5"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.733"
+            app:layout_constraintHorizontal_bias="0.402"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.571" />
@@ -58,7 +46,7 @@
             android:background="@drawable/rectangle_bg_gray_501_radius_5_5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.913"
+            app:layout_constraintHorizontal_bias="0.815"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.571" />
@@ -70,7 +58,7 @@
             android:background="@drawable/rectangle_bg_bluegray_100_90_radius_5_5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.168"
+            app:layout_constraintHorizontal_bias="0.201"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.571" />
@@ -204,8 +192,8 @@
 
         <LinearLayout
             android:id="@+id/linearRowsiasygnauwi"
-            android:layout_width="337dp"
-            android:layout_height="wrap_content"
+            android:layout_width="341dp"
+            android:layout_height="95dp"
             android:layout_marginStart="@dimen/_10pxh"
             android:layout_marginTop="@dimen/_36pxv"
             android:layout_marginEnd="@dimen/_10pxh"
@@ -214,21 +202,23 @@
             <TextView
                 android:id="@+id/txtSiasygnauWi"
                 style="@style/txtLexendregular32"
-                android:layout_width="0dp"
+                android:layout_width="219dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_3pxv"
                 android:layout_weight="0.7"
-                android:text="@string/msg_si_a_sygna_u_w" />
+                android:text="@string/msg_si_a_sygna_u_w"
+                android:textAlignment="center"
+                android:textSize="@dimen/_32pxh" />
 
             <ImageView
                 android:id="@+id/imageWifianalyzerOne"
-                android:layout_width="@dimen/_79pxh"
-                android:layout_height="@dimen/_79pxh"
+                android:layout_width="98dp"
+                android:layout_height="101dp"
                 android:layout_marginStart="@dimen/_39pxh"
                 android:layout_marginTop="@dimen/_4pxv"
                 android:scaleType="fitXY"
-                tools:ignore="ContentDescription"
-                android:src="@drawable/img_wifianalyzer1" />
+                android:src="@drawable/img_wifianalyzer1"
+                tools:ignore="ContentDescription" />
         </LinearLayout>
 
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

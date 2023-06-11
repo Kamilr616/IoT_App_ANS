@@ -47,14 +47,14 @@ public class StatisticActivity3 extends AppCompatActivity {
 
     private void createTemperatureChart() {
         String[] daysOfWeek = {"Pon", "Wto", "Śro", "Czw", "Pią", "Sob", "Nie"};
-        float[] temperatureValues = {1f, 20f, 5f, 35f, 2f, 45f, 4f};
+        float[] temperatureValues = {7.1f, 9.5f, 8.1f, 8.5f, 10.5f, 12f, 11f};
 
         List<Entry> entries = new ArrayList<>();
         for (int i = 0; i < daysOfWeek.length; i++) {
             entries.add(new Entry(i, temperatureValues[i]));
         }
 
-        LineDataSet dataSet = new LineDataSet(entries, "Temperatura (°C)");
+        LineDataSet dataSet = new LineDataSet(entries, "Wartość bezwzględna (g/m3)");
         dataSet.setColor(Color.RED);
         dataSet.setValueTextColor(Color.BLACK);
         dataSet.setValueTextSize(13f); // Zwiększenie rozmiaru czcionki dla wartości
@@ -63,7 +63,7 @@ public class StatisticActivity3 extends AppCompatActivity {
         chart.setData(lineData);
 
         Description description = new Description();
-        description.setText("Temperatura w stosunku do dni tygodnia");
+        description.setText("Wartość bezwzględna w stosunku do dni tygodnia");
         description.setTextSize(12f); // Zwiększenie rozmiaru czcionki dla opisu
         chart.setDescription(description);
 
@@ -96,7 +96,7 @@ public class StatisticActivity3 extends AppCompatActivity {
                 x2 = touchevent.getX();
                 y2 = touchevent.getY();
                 if (x1 > x2) {
-                    Intent i = new Intent(this, StatisticActivity4.class);
+                    Intent i = new Intent(this, StatisticActivity5.class);
                     startActivity(i);
                 }
                 else if(x1 < x2){

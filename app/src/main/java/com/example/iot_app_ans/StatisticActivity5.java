@@ -47,7 +47,7 @@ public class StatisticActivity5 extends AppCompatActivity {
 
     private void createTemperatureChart() {
         String[] daysOfWeek = {"Pon", "Wto", "Śro", "Czw", "Pią", "Sob", "Nie"};
-        float[] temperatureValues = {1f, 20f, 5f, 35f, 2f, 45f, 4f};
+        float[] temperatureValues = {-72f, -69f, -65f, -42f, -58f, -36f, -79f};
 
         List<Entry> entries = new ArrayList<>();
         for (int i = 0; i < daysOfWeek.length; i++) {
@@ -99,7 +99,7 @@ public class StatisticActivity5 extends AppCompatActivity {
                     startActivity(i);
                 }
                 else if(x1 < x2) {
-                    Intent i = new Intent(this, StatisticActivity4.class);
+                    Intent i = new Intent(this, StatisticActivity3.class);
                     startActivity(i);
                 }
                 break;
