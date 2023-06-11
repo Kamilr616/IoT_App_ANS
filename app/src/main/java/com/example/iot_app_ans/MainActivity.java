@@ -1,30 +1,28 @@
 package com.example.iot_app_ans;
-import com.google.gson.annotations.SerializedName;
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.widget.Button;
-import android.content.Intent;
 import android.widget.TextView;
-import androidx.appcompat.app.AppCompatActivity;
+import retrofit2.Call;
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import android.util.Log;
-import com.google.gson.Gson;
-import com.google.gson.JsonElement;
-import com.google.gson.Gson;
 import com.google.gson.JsonObject;
+import org.json.JSONObject;
+
 
 
 public class MainActivity extends AppCompatActivity {
+
     float x1, x2, y1, y2;
     TextView txtData;
     Button buttonSettings;
     Button Statistic;
     ESP32Service esp32Service;
+    private static Context appContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,57 +35,28 @@ public class MainActivity extends AppCompatActivity {
         String formattedDate = DateFormat.getDateInstance(DateFormat.FULL).format(currentTime);
         txtData.setText(formattedDate);
 
-
         buttonSettings = findViewById(R.id.Settings);
-        Statistic = (Button) findViewById(R.id.StatisticButton);
+        Statistic = findViewById(R.id.StatisticButton);
         Statistic.setOnClickListener(view -> openStatistic());
-        buttonSettings.setOnClickListener(view -> NewActivity());
+        buttonSettings.setOnClickListener(view -> openSettings());
 
         // Inicjalizacja Retrofit
         esp32Service = ESP32ApiClient.getClient().create(ESP32Service.class);
 
-        // Wywołanie żądania GET
-        Call<JsonObject> call = esp32Service.getData();
+        // Przypisanie kontekstu aplikacji do zmiennej appContext
+        appContext = getApplicationContext();
 
+        // Wywołanie żądania GET dla czujnika temperatury
+        Call<JsonObject> temperatureCall = esp32Service.getTemperatureData();
+        temperatureCall.enqueue(new SensorDataResponseHandler(MainActivity.this, R.id.txt23C));
 
-        call.enqueue(new Callback<JsonObject>() {
-            @Override
-            public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
-                if (response.isSuccessful()) {
-                    JsonObject jsonObject = response.body();
-                    if (jsonObject != null) {
-                        String stateValue = jsonObject.get("state").getAsString();
-                        String unitOfMeasurement = jsonObject.get("attributes").getAsJsonObject().get("unit_of_measurement").getAsString();
-                        String message = stateValue + " " + unitOfMeasurement;
+        // Wywołanie żądania GET dla czujnika wilgotności
+        Call<JsonObject> humidityCall = esp32Service.getHumidityData();
+        humidityCall.enqueue(new SensorDataResponseHandler(MainActivity.this, R.id.txtThirtySix2));
+    }
 
-                        // Aktualizacja TextView
-                        TextView textView = findViewById(R.id.txt23C);
-                        textView.setText(message);
-                    } else {
-                        String errorMessage = "Błąd odpowiedzi HTTP: " + response.code();
-                        Log.d("TAG", errorMessage);
-                        switch (response.code()) {
-                            case 400:
-                                // Obsługa błędu 400 Bad Request
-                                break;
-                            case 401:
-                                // Obsługa błędu 401 Unauthorized
-                                break;
-                            case 404:
-                                // Obsługa błędu 404 Not Found
-                                break;
-                            default:
-                                // Obsługa innych błędów
-                                break;
-                        }
-                    }
-                }
-            }
-            @Override
-            public void onFailure(Call<JsonObject> call, Throwable t) {
-                // Obsługa błędu komunikacji
-            }
-            });
+    public static Context getAppContext() {
+        return appContext;
     }
 
     private void openStatistic() {
@@ -104,20 +73,28 @@ public class MainActivity extends AppCompatActivity {
             case MotionEvent.ACTION_UP:
                 x2 = touchevent.getX();
                 y2 = touchevent.getY();
-                if (x2 < x1) {
-                    Intent i = new Intent(MainActivity.this, MainActivity2.class);
-                    startActivity(i);
+                float deltaY = y2 - y1;
+                if (deltaY < 0 && Math.abs(deltaY) > 100) {
+                    // Swipe w górę - odświeżanie danych
+                    refreshData();
                 }
                 break;
         }
         return false;
     }
 
-    private void NewActivity() {
-        setContentView(R.layout.activity_settings);
+    private void refreshData() {
+        // Wywołanie żądania GET dla czujnika temperatury
+        Call<JsonObject> temperatureCall = esp32Service.getTemperatureData();
+        temperatureCall.enqueue(new SensorDataResponseHandler(MainActivity.this, R.id.txt23C));
+
+        // Wywołanie żądania GET dla czujnika wilgotności
+        Call<JsonObject> humidityCall = esp32Service.getHumidityData();
+        humidityCall.enqueue(new SensorDataResponseHandler(MainActivity.this, R.id.txtThirtySix2));
+    }
+
+    private void openSettings() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
     }
 }
-
-
-
-
