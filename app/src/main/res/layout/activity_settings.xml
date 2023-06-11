@@ -50,7 +50,7 @@
                 android:layout_weight="0"
                 android:paddingLeft="15dp"
                 android:stateListAnimator="@null"
-                android:text="Ustawienia urządzeniu"
+                android:text="Ustawienia urządzenia"
                 android:textAlignment="viewStart"
                 android:textAppearance="@style/txtLexendregular16" />
 

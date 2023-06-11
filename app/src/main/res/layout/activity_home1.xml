@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/TempPomieszczenia"
+        android:id="@+id/Inf_o_apk"
         style="@style/groupStylegray_200cornerRadius"
         android:layout_width="339dp"
         android:layout_height="141dp"
