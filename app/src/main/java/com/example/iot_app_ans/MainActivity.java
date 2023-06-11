@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         // Wywołanie żądania GET dla czujnika WIFI
         Call<JsonObject> HumidityAbsolut = esp32Service.getHumidityAbsolutData();
         HumidityAbsolut.enqueue(new SensorDataResponseHandler(MainActivity.this, R.id.txt75C2));
+
     }
 
     public static Context getAppContext() {
